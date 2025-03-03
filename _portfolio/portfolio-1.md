@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Yi Louis LIU"
+excerpt: "PROFESSOR/ADVISOR <br/>PhD in Hydrogeology. <br/><img src='/images/Liuyi.png' style='max-width: 500px; height: auto;'>"
 collection: portfolio
 ---
 

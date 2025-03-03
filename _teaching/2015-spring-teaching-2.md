@@ -1,20 +1,22 @@
 ---
-title: "Teaching experience 2"
+title: "Global carbon cycle and climate change (Course instructor)"
 collection: teaching
-type: "Workshop"
+type: "EOAS5006"
 permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+venue: "3 Credits"
+date: 2023-01-01
+#location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Position and contents
+------
+This course provides fundamental knowledge of how carbon flows through the land-ocean-atmosphere continuum and how carbon interacts with the cycling of water and other essential biogeochemical elements to regulate the Earth’s climate. It provides insight into human activities altering the carbon cycle, the global climate, and ecosystem dynamics. It also explores nature-based solutions or eco-engineering strategies for achieving carbon neutrality and mitigating adverse climate and ecosystem changes.
 
-Heading 1
-======
+Final competences
+------
 
-Heading 2
-======
+(1) Evaluate and discuss the interactions between surface processes and landforms at a range of spatial and temporal scales in landscapes exemplified
 
-Heading 3
-======
+(2) Analyse the production, transfer and deposition of sediments in key surface process domains operating
+
+(3) Explain how Quaternary climatic changes have impacted the New Zealand environment with reference to the operation of geomorphic processes and landforms.
