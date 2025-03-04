@@ -1,6 +1,6 @@
 ---
 title: "Zhiyun DENG"
-excerpt: "Research assistant (enroll in 2025) <br/>Research Interests: (1) 潮间带; <br/>(2) 环境微生物. <br/><img src='/images/campus_group.png' style='max-width: 500px; height: auto;'>"
+excerpt: "**Research Assistant** (enroll in 2025) <br/>**Research Interests:** <br/>(1) Microbial Ecology; <br/>(2) Biogeochemistry Cycle . <br/><img src='/images/zhiyundeng.png' style='max-width: 500px; height: auto;'>"
 collection: portfolio
 ---
 

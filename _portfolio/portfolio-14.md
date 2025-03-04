@@ -1,6 +1,6 @@
 ---
 title: "Junyi ZHUANG"
-excerpt: "PhD Student (enroll in 2024) <br/>Research Interests: (1) Hyporheic exchange and groundwater recharge in the watershed; <br/>(2) 铁元素分析. <br/><img src='/images/campus_group.png' style='max-width: 500px; height: auto;'>"
+excerpt: "**PhD Student** (enroll in 2024) <br/>**Research Interests**: <br/>(1) Hyporheic exchange and groundwater recharge in the watershed; <br/>(2) 铁元素分析. <br/><img src='/images/campus_group.png' style='max-width: 500px; height: auto;'>"
 collection: portfolio
 ---
 

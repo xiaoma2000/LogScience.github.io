@@ -1,6 +1,6 @@
 ---
 title: "Yi Louis LIU"
-excerpt: "PROFESSOR/ADVISOR <br/>PhD in Hydrogeology. <br/><img src='/images/Liuyi.png' style='max-width: 500px; height: auto;'>"
+excerpt: "**PROFESSOR/ADVISOR** (PhD in Hydrogeology) <br/>**Research Interests:** <br/>(1) Hydrogeology, Groundwater-Surface water interaction, Land-Ocean Interaction; <br/>(2) Greenhouse Gas Emission from Water Bodies; <br/>(3) Coastal Biogeochemistry; <br/>(4) Watershed Carbon and Nitrogen Cycles. <br/><img src='/images/Liuyi.png' style='max-width: 500px; height: auto;'>"
 collection: portfolio
 ---
 

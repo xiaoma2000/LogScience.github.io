@@ -1,6 +1,6 @@
 ---
 title: "Alumni"
-excerpt: "Shuoyu ZHANG; Research Assistant (2024); Further destination : MSc Student at HKUST. <br/>XXXX"
+excerpt: "**Shuoyu ZHANG, Research Assistant (2024)**; Further destination, MSc Student at HKUST. <br/><br/>**We are expecting more!**"
 collection: portfolio
 ---
 
