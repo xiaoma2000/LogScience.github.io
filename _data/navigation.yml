@@ -14,7 +14,7 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Team"
+  - title: "People"
     url: /portfolio/
         
   - title: "News"
@@ -24,4 +24,4 @@ main:
     url: /cv/
     
   - title: "Contact"
-    url: /markdown/
+    url: /contact/

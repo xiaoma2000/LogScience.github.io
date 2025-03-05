@@ -1,7 +1,11 @@
 ---
 title: "Alumni"
-excerpt: "**Shuoyu ZHANG, Research Assistant (2024)**; Further destination, MSc Student at HKUST. <br/><br/>**We are expecting more!**"
+excerpt: "Click to check out our alumni friends!"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+**Shuoyu ZHANG, Research Assistant (2024)**; Further destination, MSc Student at HKUST.
+
+We are expecting more!
+------
+

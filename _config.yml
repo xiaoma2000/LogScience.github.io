@@ -219,7 +219,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio: # 修改为teams
+  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:

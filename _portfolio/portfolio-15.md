@@ -1,7 +1,7 @@
 ---
 title: "Xinke LI"
-excerpt: "**Mphi Student** (enroll in 2024) <br/>**Research Interests:** <br/>(1) 镇海湾; <br/>(2) 微塑料分析. <br/><img src='/images/campus_group.png' style='max-width: 500px; height: auto;'>"
+excerpt: "**Mphi Student** (enroll in 2024) <br/>**Research Interests:** <br/>(1) Dynamic Changes of Microplastics in Estuaries <br/>(2) Transport and Deposition of Microplastics in Various Ecosystems <br/><img src='/images/xinke.png' style='max-height: 400px; width: auto;'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Contact: xli299@connect.hkust-gz.edu.cn
