@@ -164,6 +164,7 @@ exclude:
   - CONTENT_GUIDE.zh-CN.md
   - VERSION
   - CHANGELOG.md
+  - PUBLISHING.zh-CN.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

@@ -28,6 +28,8 @@ Six core pages use _layouts/lab.html, assets/css/lab.css and minimal local JavaS
 
 ## Publishing
 
+The student preview is https://xiaoma2000.github.io/LogScience.github.io/ once the Pages workflow succeeds. See [publishing and PI handoff](PUBLISHING.zh-CN.md). The workflow derives its address from Pages metadata, while local preview and the v2.0 tag remain unchanged.
+
 Iterate locally. Push only after the user and PI agree a draft and the user explicitly requests upload. Student: xiaoma2000/LogScience.github.io. Independent production: YiLouisLIU/YiLouisLIU.github.io. Forks do not update production automatically. Verify url/baseurl and Pages deployment when handing over.
 
 ## Attribution

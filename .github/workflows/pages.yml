@@ -1,0 +1,63 @@
+name: Publish LogScience website
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out approved sources
+        uses: actions/checkout@v4
+      - name: Read Pages deployment metadata
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Check source content and behavior
+        run: |
+          python3 -m unittest discover -s tests -q
+          node --test tests/test_lab_state.cjs
+          python3 tools/check_content.py
+      - name: Configure this build for its Pages address
+        env:
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          PAGES_REPOSITORY: ${{ github.repository }}
+        run: python3 tools/prepare_pages_config.py
+      - name: Build with the official Pages Jekyll environment
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+          verbose: false
+      - name: Check built pages, links and assets
+        run: python3 tools/check_content.py --site-dir _site --json
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy approved website
+        id: deployment
+        uses: actions/deploy-pages@v5
