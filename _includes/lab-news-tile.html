@@ -1,0 +1,7 @@
+{% assign entry = include.item %}
+<article class="news-tile">
+  <a class="news-tile__image{% if entry.image_fit == 'contain' %} is-contain{% endif %}" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">{% assign news_alt = entry.image_alt_en | default: entry.image_alt %}{% include lab-image.html src=entry.image alt=news_alt %}</a>
+  <div class="item-meta"><span>{{ entry.category | default: 'community' | capitalize }}</span><time datetime="{{ entry.date }}">{{ entry.date | date: '%d %b %Y' }}</time></div>
+  <h3><a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{ entry.title_en | default: entry.title | escape }} <span class="sr-only">(opens original article in a new tab)</span></a></h3>
+  <p>{{ entry.summary_en | default: entry.summary | escape }}</p>
+</article>

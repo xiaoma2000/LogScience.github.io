@@ -1,0 +1,163 @@
+.team-page {
+  width: 100%;
+  margin-bottom: 3em;
+
+  .team-section {
+    margin-top: 34px;
+
+    &__title {
+      margin: 0 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--global-border-color);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+
+    &--pi {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .team-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--global-border-color);
+    border-radius: 7px;
+    background: var(--global-bg-color);
+
+    &__photo {
+      display: block;
+      flex: 0 0 128px;
+      width: 128px;
+      height: 160px;
+      margin: 0;
+      border-radius: 5px;
+      object-fit: cover;
+      background: #f5f6f7;
+    }
+
+    &__body {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    &__name {
+      margin: 0 0 14px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--global-text-color);
+    }
+
+    &__entry {
+      white-space: nowrap;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    &__label {
+      margin: 0 0 6px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    &__interests {
+      margin: 0;
+      padding-left: 17px;
+      font-size: 14px;
+      line-height: 1.65;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__note {
+      margin: -5px 0 12px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    &__email {
+      display: inline-block;
+      margin-top: 13px;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .team-grid--pi .team-card {
+    gap: 32px;
+    padding: 26px;
+
+    &__photo {
+      flex-basis: 180px;
+      width: 180px;
+      height: 225px;
+    }
+
+    &__name {
+      font-size: 23px;
+    }
+  }
+
+  .team-alumni {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.8;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .team-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .team-section {
+      margin-top: 28px;
+    }
+
+    .team-card,
+    .team-grid--pi .team-card {
+      gap: 14px;
+      padding: 16px;
+
+      &__photo {
+        flex-basis: 92px;
+        width: 92px;
+        height: 115px;
+      }
+
+      &__name {
+        font-size: 17px;
+      }
+    }
+
+    .team-card__entry {
+      font-size: 14px;
+    }
+
+    .team-card__interests {
+      padding-left: 14px;
+      font-size: 13px;
+    }
+  }
+}

@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Land-Ocean-Groundwater Science"
 title_separator          : "-"
-name                     : &name "Your Name" #??
-description              : &description "personal description" #??
+name                     : &name "LogScience Lab" #??
+description              : &description "Groundwater, watershed biogeochemistry and land-ocean science at HKUST(GZ)" #??
 url                      : "https://YiLouisLIU.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #"academicpages/academicpages.github.io"
@@ -23,7 +23,7 @@ repository               : #"academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "liuyi_website.png"
-  name             : "Dr. Yi Louis LIU"
+  name             : "Yi LIU"
   pronouns         : # example: "she/her"  
   bio              : "Hello! I am a hydrogeologist studying the scientific questions of hydrogeology and biogeochemistry in the intertidal aquifer and hyporheic zone. "
   location         : "Nansha, Guangzhou, China."
@@ -158,6 +158,12 @@ include:
   - _pages
   - files
 exclude:
+  - tools
+  - tests
+  - content-templates
+  - CONTENT_GUIDE.zh-CN.md
+  - VERSION
+  - CHANGELOG.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -229,11 +235,17 @@ collections:
 
 # These settings control how pages and collections are included in the site 控制各个页面[点击标题栏之后]
 defaults:
+  # Keep archived static HTML/PDFs out of search; six core pages opt in.
+  - scope:
+      path: ""
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
       type: posts
     values:
+      sitemap: false
       layout: single
       author_profile: true
       read_time: true
@@ -245,6 +257,7 @@ defaults:
       path: ""
       type: pages
     values:
+      sitemap: false
       layout: single
       author_profile: true
   # _teaching
@@ -252,6 +265,7 @@ defaults:
       path: ""
       type: teaching
     values:
+      sitemap: false
       layout: single
       author_profile: true
       share: true
@@ -261,6 +275,7 @@ defaults:
       path: ""
       type: publications
     values:
+      sitemap: false
       layout: single
       author_profile: true
       share: true
@@ -270,6 +285,7 @@ defaults:
       path: ""
       type: portfolio
     values:
+      sitemap: false
       layout: single
       author_profile: true
       share: true
@@ -279,6 +295,7 @@ defaults:
       path: ""
       type: talks
     values:
+      sitemap: false
       layout: talk
       author_profile: true
       share: true

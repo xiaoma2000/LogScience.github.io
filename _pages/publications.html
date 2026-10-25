@@ -1,36 +1,14 @@
 ---
-layout: archive
-title: "Publications LogScience Lab"
+layout: lab
+title: "Publications"
+section: publications
 permalink: /publications/
-author_profile: true
+sitemap: true
+description: "Selected first- and corresponding-author research from the group, spanning watershed biogeochemistry, coastal groundwater and contaminant transport."
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+{% assign groups = site.data.group_publications | group_by: 'year' | sort: 'name' | reverse %}
+<div class="shell page-content" data-publications>
+<div class="library-top"><form class="search-form" data-pub-search hidden role="search"><label class="sr-only" for="paper-search">Search publications</label><input type="search" id="paper-search" name="q" placeholder="Search title, author or journal" maxlength="160"><button type="submit">Search</button></form><p class="library-note">* Corresponding author · <strong>Yi Liu</strong> in bold<br><a href="{{ site.data.lab.scholar_url }}" target="_blank" rel="noopener noreferrer">Full record on Google Scholar ↗</a></p></div>
+<p class="filter-status" data-pub-status role="status" aria-live="polite">{{ site.data.group_publications.size }} publications</p>
+<div class="pub-layout"><nav class="year-nav" aria-label="Publication years">{% for group in groups %}<a href="#year-{{ group.name }}" data-year-link="{{ group.name }}">{{ group.name }} <span>{{ group.items.size }}</span></a>{% endfor %}</nav><div>{% for group in groups %}<section class="pub-year" id="year-{{ group.name }}" data-pub-year="{{ group.name }}" aria-labelledby="heading-{{ group.name }}"><h2 id="heading-{{ group.name }}">{{ group.name }}</h2><ol class="pub-list">{% assign papers = group.items | sort: 'order' %}{% for paper in papers %}<li class="pub-entry" data-pub-item data-pub-names="{{ paper.authors | map: 'name' | join: ' ' | escape }}" data-doi="{{ paper.doi }}"><h3><a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">{{ paper.title }} <span aria-hidden="true">↗</span></a></h3><p class="pub-authors">{% for author in paper.authors %}{% if author.is_pi %}<strong>{{ author.label }}</strong>{% else %}{{ author.label }}{% endif %}{% if author.corresponding %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p><p class="pub-source"><em>{{ paper.journal }}</em>{% if paper.volume != '' %}, {{ paper.volume }}{% if paper.issue != '' %}({{ paper.issue }}){% endif %}{% endif %}{% if paper.locator != '' %}, {{ paper.locator }}{% endif %} ({{ paper.year }}). <a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">DOI ↗</a></p>{% if paper.online_year and paper.online_year != paper.year %}<p class="pub-online">First published online {{ paper.online_year }} · Citation follows the journal volume year.</p>{% endif %}</li>{% endfor %}</ol></section>{% endfor %}<div class="empty-state" data-pub-empty hidden><h2>No matching publications</h2><p>Try a different title, author or research term.</p><button type="button" class="clear-button" data-pub-clear>Clear search</button></div></div></div>
+</div>

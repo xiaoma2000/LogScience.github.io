@@ -5,23 +5,20 @@
 # prevent it from being included in the site.
 
 main:
+  - title: "Mainpage"
+    url: /
+
+  - title: "Research Topic"
+    url: /research/
+
+  - title: "Team Member"
+    url: /team/
+
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "People"
-    url: /portfolio/
-        
   - title: "News"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
+    url: /news/
+
   - title: "Contact"
     url: /contact/

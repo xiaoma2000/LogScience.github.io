@@ -1,0 +1,317 @@
+{
+  "/images/HuanWANG.png": {
+    "src": "/images/site/huanwang-6f2863c144.webp",
+    "width": 640,
+    "height": 427,
+    "source_bytes": 14746534,
+    "bytes": 19970
+  },
+  "/images/affiliations/core.png": {
+    "src": "/images/site/core-ca1430db00.webp",
+    "width": 1000,
+    "height": 391,
+    "source_bytes": 167759,
+    "bytes": 65556
+  },
+  "/images/affiliations/eoas.jpg": {
+    "src": "/images/site/eoas-8ac6369baa.webp",
+    "width": 1000,
+    "height": 167,
+    "source_bytes": 342777,
+    "bytes": 34416
+  },
+  "/images/affiliations/hkust-earth-hk.jpg": {
+    "src": "/images/site/hkust-earth-hk-6150ab6497.webp",
+    "width": 1000,
+    "height": 200,
+    "source_bytes": 274919,
+    "bytes": 37282
+  },
+  "/images/field_trip_hongkai.png": {
+    "src": "/images/site/field_trip_hongkai-2870e62437.webp",
+    "width": 813,
+    "height": 632,
+    "source_bytes": 730220,
+    "bytes": 65988
+  },
+  "/images/group2.png": {
+    "src": "/images/site/group2-5785a4c338.webp",
+    "width": 1397,
+    "height": 849,
+    "source_bytes": 1631515,
+    "bytes": 115260
+  },
+  "/images/hongkai3.png": {
+    "src": "/images/site/hongkai3-cfd0588a13.webp",
+    "width": 640,
+    "height": 427,
+    "source_bytes": 7273049,
+    "bytes": 21818
+  },
+  "/images/huanglinluo.png": {
+    "src": "/images/site/huanglinluo-12c9640435.webp",
+    "width": 534,
+    "height": 470,
+    "source_bytes": 409620,
+    "bytes": 29620
+  },
+  "/images/junyi.png": {
+    "src": "/images/site/junyi-fb915b67b5.webp",
+    "width": 480,
+    "height": 640,
+    "source_bytes": 2847807,
+    "bytes": 61514
+  },
+  "/images/liuyi_website.png": {
+    "src": "/images/site/liuyi_website-61d6103bc1.webp",
+    "width": 512,
+    "height": 633,
+    "source_bytes": 316535,
+    "bytes": 19202
+  },
+  "/images/news/2023-04-17-news-25.webp": {
+    "src": "/images/site/2023-04-17-news-25-ac6785ee38.webp",
+    "width": 800,
+    "height": 362,
+    "source_bytes": 114784,
+    "bytes": 64328
+  },
+  "/images/news/2023-05-18-news-24.webp": {
+    "src": "/images/site/2023-05-18-news-24-9c43886baa.webp",
+    "width": 678,
+    "height": 336,
+    "source_bytes": 29696,
+    "bytes": 29696
+  },
+  "/images/news/2023-10-11-news-23.webp": {
+    "src": "/images/site/2023-10-11-news-23-66db9a78d2.webp",
+    "width": 800,
+    "height": 534,
+    "source_bytes": 48682,
+    "bytes": 48682
+  },
+  "/images/news/2024-03-13-news-22.webp": {
+    "src": "/images/site/2024-03-13-news-22-e00bd03e9d.webp",
+    "width": 800,
+    "height": 491,
+    "source_bytes": 60542,
+    "bytes": 56050
+  },
+  "/images/news/2024-07-05-news-21.webp": {
+    "src": "/images/site/2024-07-05-news-21-df813450e5.webp",
+    "width": 652,
+    "height": 392,
+    "source_bytes": 55470,
+    "bytes": 55470
+  },
+  "/images/news/2024-11-26-news-20.webp": {
+    "src": "/images/site/2024-11-26-news-20-f11f040f90.webp",
+    "width": 800,
+    "height": 566,
+    "source_bytes": 106262,
+    "bytes": 91062
+  },
+  "/images/news/2025-02-14-news-19.webp": {
+    "src": "/images/site/2025-02-14-news-19-87d5e41ade.webp",
+    "width": 800,
+    "height": 435,
+    "source_bytes": 57390,
+    "bytes": 51496
+  },
+  "/images/news/2025-04-30-news-18.webp": {
+    "src": "/images/site/2025-04-30-news-18-e90005c02d.webp",
+    "width": 800,
+    "height": 480,
+    "source_bytes": 74432,
+    "bytes": 62814
+  },
+  "/images/news/2025-05-09-news-17.webp": {
+    "src": "/images/site/2025-05-09-news-17-0999f1931a.webp",
+    "width": 800,
+    "height": 350,
+    "source_bytes": 51482,
+    "bytes": 57314
+  },
+  "/images/news/2025-07-10-news-16.webp": {
+    "src": "/images/site/2025-07-10-news-16-073cffaa7b.webp",
+    "width": 800,
+    "height": 600,
+    "source_bytes": 128498,
+    "bytes": 79486
+  },
+  "/images/news/2025-07-30-news-15.webp": {
+    "src": "/images/site/2025-07-30-news-15-5288ac79f7.webp",
+    "width": 800,
+    "height": 486,
+    "source_bytes": 25166,
+    "bytes": 17542
+  },
+  "/images/news/2025-09-28-news-13.webp": {
+    "src": "/images/site/2025-09-28-news-13-15a556fda3.webp",
+    "width": 800,
+    "height": 533,
+    "source_bytes": 103754,
+    "bytes": 73144
+  },
+  "/images/news/2026-01-12-news-10.webp": {
+    "src": "/images/site/2026-01-12-news-10-7822151180.webp",
+    "width": 800,
+    "height": 350,
+    "source_bytes": 30492,
+    "bytes": 28488
+  },
+  "/images/news/2026-02-12-news-09.webp": {
+    "src": "/images/site/2026-02-12-news-09-0b9a96457a.webp",
+    "width": 800,
+    "height": 438,
+    "source_bytes": 78084,
+    "bytes": 69126
+  },
+  "/images/news/2026-03-31-news-08.webp": {
+    "src": "/images/site/2026-03-31-news-08-e9a51ef646.webp",
+    "width": 800,
+    "height": 469,
+    "source_bytes": 69638,
+    "bytes": 45236
+  },
+  "/images/news/2026-04-01-news-07.webp": {
+    "src": "/images/site/2026-04-01-news-07-b8ef6db64e.webp",
+    "width": 800,
+    "height": 530,
+    "source_bytes": 37076,
+    "bytes": 24838
+  },
+  "/images/news/2026-05-01-news-06.webp": {
+    "src": "/images/site/2026-05-01-news-06-09e60791a5.webp",
+    "width": 800,
+    "height": 534,
+    "source_bytes": 44336,
+    "bytes": 28846
+  },
+  "/images/news/2026-05-07-news-05.webp": {
+    "src": "/images/site/2026-05-07-news-05-6acdb62d17.webp",
+    "width": 800,
+    "height": 394,
+    "source_bytes": 86790,
+    "bytes": 72390
+  },
+  "/images/news/2026-07-16-news-04.webp": {
+    "src": "/images/site/2026-07-16-news-04-296c989bf2.webp",
+    "width": 800,
+    "height": 531,
+    "source_bytes": 33240,
+    "bytes": 40534
+  },
+  "/images/news/2026-09-01-news-03.png": {
+    "src": "/images/site/2026-09-01-news-03-d22dde257d.webp",
+    "width": 451,
+    "height": 451,
+    "source_bytes": 253552,
+    "bytes": 30674
+  },
+  "/images/news/2026-10-03-news-01.png": {
+    "src": "/images/site/2026-10-03-news-01-fb8dd7e4ba.webp",
+    "width": 759,
+    "height": 570,
+    "source_bytes": 367122,
+    "bytes": 35834
+  },
+  "/images/news/hongkai-graduation-portrait.webp": {
+    "src": "/images/site/hongkai-graduation-portrait-846544540a.webp",
+    "width": 591,
+    "height": 800,
+    "source_bytes": 119018,
+    "bytes": 77966
+  },
+  "/images/prb_ch4.png": {
+    "src": "/images/site/prb_ch4-ad02800d13.webp",
+    "width": 1136,
+    "height": 720,
+    "source_bytes": 854815,
+    "bytes": 162846
+  },
+  "/images/prb_micro.png": {
+    "src": "/images/site/prb_micro-a23a68da72.webp",
+    "width": 852,
+    "height": 720,
+    "source_bytes": 694917,
+    "bytes": 97198
+  },
+  "/images/research/coastal-iron-phosphorus.webp": {
+    "src": "/images/site/coastal-iron-phosphorus-22625c7e87.webp",
+    "width": 1080,
+    "height": 472,
+    "source_bytes": 30492,
+    "bytes": 30492
+  },
+  "/images/research/gba-surface-water-regimes.png": {
+    "src": "/images/site/gba-surface-water-regimes-7e5b73dccc.webp",
+    "width": 1280,
+    "height": 950,
+    "source_bytes": 2702536,
+    "bytes": 175902
+  },
+  "/images/research/microplastic-transport.webp": {
+    "src": "/images/site/microplastic-transport-56b9c2c0ac.webp",
+    "width": 865,
+    "height": 574,
+    "source_bytes": 33240,
+    "bytes": 33240
+  },
+  "/images/research/river-hyporheic-carbon.webp": {
+    "src": "/images/site/river-hyporheic-carbon-1ff2d7a2df.webp",
+    "width": 831,
+    "height": 321,
+    "source_bytes": 38714,
+    "bytes": 38714
+  },
+  "/images/research/watershed-carbon-nitrogen.webp": {
+    "src": "/images/site/watershed-carbon-nitrogen-9f25b04474.webp",
+    "width": 1080,
+    "height": 648,
+    "source_bytes": 74432,
+    "bytes": 74432
+  },
+  "/images/research_topic1.png": {
+    "src": "/images/site/research_topic1-453675262a.webp",
+    "width": 1280,
+    "height": 688,
+    "source_bytes": 528017,
+    "bytes": 108024
+  },
+  "/images/research_topic2.png": {
+    "src": "/images/site/research_topic2-63e7cbf068.webp",
+    "width": 1280,
+    "height": 686,
+    "source_bytes": 652495,
+    "bytes": 126834
+  },
+  "/images/site_sandy_beach.png": {
+    "src": "/images/site/site_sandy_beach-a4a74ad756.webp",
+    "width": 1600,
+    "height": 727,
+    "source_bytes": 2530976,
+    "bytes": 156082
+  },
+  "/images/xingcheng.png": {
+    "src": "/images/site/xingcheng-fe7f5fb4d1.webp",
+    "width": 399,
+    "height": 640,
+    "source_bytes": 1608580,
+    "bytes": 21536
+  },
+  "/images/xinke.png": {
+    "src": "/images/site/xinke-b3c64b0d5f.webp",
+    "width": 427,
+    "height": 640,
+    "source_bytes": 2399326,
+    "bytes": 38424
+  },
+  "/images/zhangyan.png": {
+    "src": "/images/site/zhangyan-1e43f869fe.webp",
+    "width": 427,
+    "height": 640,
+    "source_bytes": 16003116,
+    "bytes": 23258
+  }
+}

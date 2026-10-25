@@ -1,0 +1,9 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}"><span>{{ site.data.lab.wordmark }}</span><small>LogScience Lab <span aria-hidden="true">·</span> HKUST(GZ)</small></a>
+    <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" data-menu-button hidden><span class="menu-lines" aria-hidden="true"></span><span class="sr-only">Open navigation</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+      {% for item in site.data.navigation.main %}<a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>

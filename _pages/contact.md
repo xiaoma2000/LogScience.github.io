@@ -1,23 +1,11 @@
 ---
-layout: archive
-title: "Feel free to reach out to me and other team members!"
+layout: lab
+title: "Contact"
+section: contact
 permalink: /contact/
-author_profile: true
+sitemap: true
+description: "Connect with LogScience Lab at HKUST(GZ) for research collaborations, academic exchange and enquiries about joining the team."
 redirect_from:
   - /contact
 ---
-
-{% include base_path %}
-
-If there are any vacancies for Research Assistants, MPhil Students, or Doctoral Students, we will update this as soon as possible.
-
-
-Opportunity
-------
-2025/26 Master of Philosophy and Doctor of Philosophy Programs in Earth, Ocean and Atmospheric Sciences
-We welcome you to check out the [HKUST(GZ) PG Programs in EOAS](https://fytgs.hkust-gz.edu.cn/programs/2024-25/function-hub/earth-ocean-and-atmospheric-sciences-3), and submit your application according to the [Admission Guides](https://fytgs.hkust-gz.edu.cn/admissions/apply-now). We will carefully review your materials and get in touch with you!
-
-We Can't Wait To See You!
-------
-
-
+<div class="shell page-content"><div class="contact-grid"><section class="contact-primary" aria-labelledby="contact-email-title"><h2 id="contact-email-title">Email & visit</h2><a class="contact-email" href="mailto:{{ site.data.lab.email }}">{{ site.data.lab.email }}</a><address>{{ site.data.lab.institution }}<br>{% for line in site.data.lab.address %}{{ line }}<br>{% endfor %}</address>{% if site.data.lab.office %}<p class="office">Office · {{ site.data.lab.office }}</p>{% endif %}<div class="button-row"><a class="text-link" href="{{ site.data.lab.faculty_url }}" target="_blank" rel="noopener noreferrer" style="color:#fff">University profile <span aria-hidden="true">↗</span></a></div></section><div><section class="contact-detail"><h2>Research & collaboration</h2><p>We welcome conversations on groundwater–surface water interactions, watershed and coastal biogeochemistry, contaminant transport and surface-water observation.</p><p>For collaboration or academic enquiries, email Yi LIU with a brief introduction and the question or project you would like to discuss.</p></section><section class="contact-detail" id="phd-opportunities" aria-labelledby="phd-title">{% assign opportunity = site.data.opportunities.current[0] %}{% if opportunity %}<h2 id="phd-title">PhD opportunities</h2><p>Applications are open for <strong>{{ opportunity.positions }}</strong>, starting in <strong>{{ opportunity.intake }}</strong>.</p><p><strong>Research focus</strong><br>{{ opportunity.research_focus }}.</p><ul>{% for requirement in opportunity.requirements %}<li>{{ requirement }}</li>{% endfor %}</ul><p>To enquire, email Yi LIU with your CV and research background, and indicate “PhD application” in the subject. Admission and studentship policies follow the University’s current requirements.</p><div class="button-row"><a class="text-link" href="{{ opportunity.url }}" target="_blank" rel="noopener noreferrer">Read the recruitment announcement <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ site.data.lab.admissions_url }}" target="_blank" rel="noopener noreferrer">Graduate admissions <span aria-hidden="true">↗</span></a></div><p class="source-note">Announcement published {{ opportunity.date | date: '%d %b %Y' }}.</p>{% else %}<h2 id="phd-title">Prospective team members</h2><p>If your interests connect with our research, contact Yi LIU with your background and research interests.</p><a class="text-link" href="{{ site.data.lab.admissions_url }}" target="_blank" rel="noopener noreferrer">Graduate admissions ↗</a>{% endif %}</section></div></div></div>

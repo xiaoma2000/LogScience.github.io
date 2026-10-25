@@ -1,0 +1,47 @@
+{% assign home = site.data.home %}
+{% assign latest_news = site.data.news | sort: "date" | reverse %}
+<div class="home-hub">
+  <section class="home-hub__section" aria-labelledby="home-explore-title">
+    <div class="home-hub__heading"><h2 id="home-explore-title">Explore the Lab</h2></div>
+    <div class="home-portals">
+      {% for portal in home.portals %}
+      <a class="home-portal" href="{{ portal.url | relative_url }}">
+        <h3>{{ portal.title | escape }}</h3>
+        <p>{{ portal.description | escape }}</p>
+        <span class="home-portal__label">{{ portal.label | escape }} <span aria-hidden="true">→</span></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-hub__section" aria-labelledby="home-news-title">
+    <div class="home-hub__heading"><h2 id="home-news-title">Latest News</h2><a href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a></div>
+    <div class="home-news">
+      {% for item in latest_news limit:home.news_limit %}
+      <article class="home-news__item" lang="zh-CN" data-news-id="{{ item.id }}">
+        <time datetime="{{ item.date }}">{{ item.date | date: "%Y-%m-%d" }}</time>
+        <h3><a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}<span class="screen-reader-text">（在新标签页打开原文）</span></a></h3>
+        <p>{{ item.summary | escape }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-hub__section" aria-labelledby="home-publications-title">
+    <div class="home-hub__heading"><h2 id="home-publications-title">Selected Publications</h2><a href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a></div>
+    <ul class="home-papers">
+      {% for paper_id in home.featured_papers %}
+      {% assign paper = site.data.group_publications | where: "id", paper_id | first %}
+      <li data-paper-id="{{ paper.id }}">
+        <p class="home-papers__journal">{{ paper.journal | escape }} <span>· {{ paper.year }}</span></p>
+        <a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">{{ paper.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="home-contact" aria-labelledby="home-contact-title">
+    <div><h2 id="home-contact-title">{{ home.contact_heading | escape }}</h2><p>{{ home.contact_text | escape }}</p></div>
+    <a href="{{ '/contact/' | relative_url }}">Contact us <span aria-hidden="true">→</span></a>
+  </section>
+</div>

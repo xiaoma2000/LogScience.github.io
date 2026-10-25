@@ -1,0 +1,23 @@
+{
+  "id": "replace-topic-id",
+  "number": "REPLACE",
+  "short_title": "替换为简短方向名",
+  "title": "替换为完整研究方向标题",
+  "question": "替换为面向访问者的核心科学问题",
+  "paragraphs": [
+    "替换为已确认可公开的研究目标和方法；未发表结果不作已完成成果陈述"
+  ],
+  "people": [
+    {
+      "id": "replace-existing-member-id",
+      "name": "替换为与成员表一致的姓名"
+    }
+  ],
+  "keywords": [
+    "替换为关键词"
+  ],
+  "image": "/images/research/REPLACE-WITH-PUBLIC-FIGURE.svg",
+  "image_alt": "替换为图示实际内容",
+  "caption": "替换为图示说明和适用的来源说明",
+  "paper_ids": []
+}

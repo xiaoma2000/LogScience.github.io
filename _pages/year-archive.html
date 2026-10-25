@@ -1,19 +1,18 @@
 ---
-layout: archive
-permalink: /year-archive/
-title: "Blog posts"
-author_profile: true
+layout: lab
+title: "News & Events"
+section: news
+permalink: /news/
+sitemap: true
+description: "Research findings, field investigations, academic exchange and milestones from the LogScience community."
 redirect_from:
+  - /year-archive/
   - /wordpress/blog-posts/
 ---
-
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign items = site.data.news | sort: 'date' | reverse %}
+<div class="shell page-content lab-news" data-news>
+<div class="news-tools" data-news-controls hidden><div class="news-controls-row"><form class="search-form" data-news-search role="search"><label class="sr-only" for="news-search">Search news</label><input type="search" id="news-search" name="q" placeholder="Search news in English or Chinese" maxlength="160"><button type="submit" data-search-label>Search</button></form><div class="language-control" role="group" aria-label="News language"><button type="button" data-news-language="en" aria-pressed="true">English</button><button type="button" data-news-language="zh" aria-pressed="false" lang="zh-CN">中文</button></div></div><div class="category-controls" role="group" aria-label="News categories"><button type="button" data-category="all" aria-pressed="true">All</button><button type="button" data-category="research" aria-pressed="false">Research</button><button type="button" data-category="recognition" aria-pressed="false">Recognition</button><button type="button" data-category="fieldwork" aria-pressed="false">Fieldwork</button><button type="button" data-category="community" aria-pressed="false">Community</button></div></div>
+<p class="filter-status" data-news-status role="status" aria-live="polite">{{ items.size }} articles</p><h2 class="sr-only news-list-start" tabindex="-1" data-news-start>News articles</h2>
+<div class="news-list">{% for item in items %}<article class="news-card" data-news-item data-news-id="{{ item.id }}" data-category="{{ item.category | default: 'community' }}"><a class="news-card__link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-labelledby="{{ item.id }}-en" data-news-link><div class="news-card__copy"><span class="news-card__category" data-card-category>{{ item.category | default: 'community' | capitalize }}</span><h2 id="{{ item.id }}-en" data-lang-text="en" lang="{% if item.title_en %}en{% else %}zh-CN{% endif %}">{{ item.title_en | default: item.title | escape }}</h2><h2 id="{{ item.id }}-zh" data-lang-text="zh" lang="zh-CN" hidden>{{ item.title | escape }}</h2><p class="news-card__summary" data-lang-text="en" lang="{% if item.summary_en %}en{% else %}zh-CN{% endif %}">{{ item.summary_en | default: item.summary | escape }}</p><p class="news-card__summary" data-lang-text="zh" lang="zh-CN" hidden>{{ item.summary | escape }}</p><time datetime="{{ item.date }}">{{ item.date | date: '%d %b %Y' }}</time><span class="sr-only" data-source-label>Read the original article in a new tab</span></div><div class="news-card__image{% if item.image_fit == 'contain' %} is-contain{% endif %}{% if item.image_shape == 'portrait' %} is-portrait{% endif %}">{% assign news_alt = item.image_alt_en | default: item.image_alt %}{% include lab-image.html src=item.image alt=news_alt %}</div></a></article>{% endfor %}</div>
+<div class="empty-state" data-news-empty hidden><h2 data-empty-title>No matching articles</h2><p data-empty-description>Try a different search or category.</p><button class="clear-button" type="button" data-news-clear>Clear filters</button></div><nav class="news-pagination" aria-label="News pages" data-news-pagination hidden></nav><p class="news-source-note">Originally shared by the EOAS social media account. Dates are original publication dates. <a href="{{ '/contact/' | relative_url }}#phd-opportunities">Looking for PhD opportunities? ↗</a></p>
+</div>

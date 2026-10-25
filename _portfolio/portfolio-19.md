@@ -2,6 +2,7 @@
 title: "Alumni"
 excerpt: "Click to check out our alumni friends!"
 collection: portfolio
+redirect_to: /team/#team-alumni
 ---
 
 **Shuoyu ZHANG, Research Assistant (2024)**; Further destination, MSc Student at HKUST.

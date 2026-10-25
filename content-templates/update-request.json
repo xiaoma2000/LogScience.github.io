@@ -1,0 +1,24 @@
+{
+  "request_type": "news",
+  "change": "替换为新增、修改或删除",
+  "target_id": null,
+  "confirmed_facts": [
+    "列出已确认的姓名、日期、职位、项目角色等；未知项另列"
+  ],
+  "sources": [
+    {
+      "file_or_url": "原始资料文件名或来源链接",
+      "note": "说明发布方、资料日期及本次采用范围"
+    }
+  ],
+  "public_assets": [
+    {
+      "file": "本文件夹内选定图片的文件名",
+      "alt": "图片实际内容的简洁描述",
+      "permission_note": "说明是否已确认可公开，以及出处"
+    }
+  ],
+  "unconfirmed": [
+    "列出仍需确认的事项；不得将它们写成网页事实"
+  ]
+}

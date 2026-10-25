@@ -1,0 +1,179 @@
+{
+  "groups": [
+    {
+      "id": "pi",
+      "title": "Principal Investigator",
+      "members": [
+        {
+          "id": "yi-liu",
+          "name": "Yi LIU",
+          "image": "/images/liuyi_website.png",
+          "image_position": "50% 35%",
+          "interests": [
+            "Isotopic geochemistry and biogeochemistry in coastal groundwater systems",
+            "Seawater intrusion and submarine groundwater discharge",
+            "Numerical modeling of groundwater–surface water interactions",
+            "Greenhouse gas emissions from surface water bodies",
+            "Groundwater–river interactions and watershed biogeochemistry"
+          ],
+          "email": "yiliuyl@hkust-gz.edu.cn",
+          "position": "Assistant Professor"
+        }
+      ]
+    },
+    {
+      "id": "postdoc",
+      "title": "Postdoc",
+      "members": [
+        {
+          "id": "hongkai-qi",
+          "name": "Hongkai QI",
+          "entry": "2022-now",
+          "entry_type": "Joined as the lab’s first PhD student in Fall 2022; postdoc since Fall 2025",
+          "image": "/images/hongkai3.png",
+          "image_position": "65% 35%",
+          "interests": [
+            "Lithologic impacts on nitrogen dynamics",
+            "Coupled cycling of nitrogen and other elements",
+            "Nitrogen biogeochemistry in the hyporheic zone",
+            "Greenhouse gas emissions from aquatic ecosystems"
+          ],
+          "note": "The lab’s first PhD graduate; postdoc since Fall 2025.",
+          "education": "PhD, HKUST(GZ) · Fall 2022–2025",
+          "postdoc_supervisors": [
+            {
+              "name": "Prof. Jianping GAN",
+              "institution": "HKUST"
+            },
+            {
+              "name": "Prof. Yi LIU",
+              "institution": "HKUST(GZ)"
+            }
+          ],
+          "email": "hqi483@connect.hkust-gz.edu.cn"
+        }
+      ]
+    },
+    {
+      "id": "phd",
+      "title": "PhD Students",
+      "members": [
+        {
+          "id": "cheng-xing",
+          "name": "Cheng XING",
+          "entry": "2023-now",
+          "entry_type": "PhD student since 2023",
+          "image": "/images/xingcheng.png",
+          "image_position": "50% 25%",
+          "interests": [
+            "Seawater–groundwater interactions",
+            "Carbon and nitrogen cycling in coastal groundwater",
+            "Estuarine biogeochemical processes"
+          ],
+          "email": "cxing765@connect.hkust-gz.edu.cn"
+        },
+        {
+          "id": "yan-zhang",
+          "name": "Yan ZHANG",
+          "entry": "2023-now",
+          "entry_type": "PhD student since 2023",
+          "image": "/images/zhangyan.png",
+          "image_position": "65% 40%",
+          "interests": [
+            "Physical and chemical land–ocean interactions",
+            "Groundwater-mediated material transport from land to ocean",
+            "Iron minerals and their implications for coastal environments"
+          ],
+          "email": "yzhang561@connect.hkust-gz.edu.cn"
+        },
+        {
+          "id": "junyi-zhuang",
+          "name": "Junyi ZHUANG",
+          "entry": "2024-now",
+          "entry_type": "PhD student since 2024",
+          "image": "/images/junyi.png",
+          "image_position": "50% 75%",
+          "interests": [
+            "Groundwater–surface water interactions",
+            "Nitrogen cycling in the hyporheic zone",
+            "Groundwater biogeochemistry"
+          ],
+          "email": "jzhuang606@connect.hkust-gz.edu.cn"
+        },
+        {
+          "id": "huan-wang",
+          "name": "Huan WANG",
+          "entry": "2024-now",
+          "entry_type": "PhD student since 2024",
+          "image": "/images/HuanWANG.png",
+          "image_position": "48% 40%",
+          "interests": [
+            "Distribution and migration of microplastics in watersheds",
+            "Microplastic transport from rivers to the ocean"
+          ],
+          "email": "hwang888@connect.hkust-gz.edu.cn"
+        },
+        {
+          "id": "huanglin-luo",
+          "name": "Huanglin LUO",
+          "entry": "2025-now",
+          "entry_type": "PhD student since 2025",
+          "image": "/images/huanglinluo.png",
+          "image_position": "43% 40%",
+          "interests": [
+            "Deep learning in hydrological modeling",
+            "Remote sensing with Google Earth Engine"
+          ],
+          "email": "hluo435@connect.hkust-gz.edu.cn"
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "title": "Research Assistant",
+      "members": [
+        {
+          "id": "xinke-li",
+          "name": "Xinke LI",
+          "entry": "2024-now",
+          "entry_type": "Joined the group in 2024; MPhil completed in September 2026, followed by a Research Assistant appointment",
+          "note": "Graduated with an MPhil from HKUST(GZ) in Sep 2026; continuing with the group as a Research Assistant.",
+          "image": "/images/xinke.png",
+          "image_position": "50% 38%",
+          "interests": [
+            "Microplastic dynamics in estuaries",
+            "Microplastic transport and deposition across ecosystems"
+          ],
+          "email": "xli299@connect.hkust-gz.edu.cn"
+        }
+      ]
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Yuke LI",
+      "role": "MPhil, HKUST(GZ)",
+      "period": "Fall 2024–Fall 2026"
+    },
+    {
+      "name": "Zhiyun DENG",
+      "role": "Research Assistant",
+      "period": "Jan 2025–Apr 2025"
+    },
+    {
+      "name": "Shuoyu ZHANG",
+      "role": "Research Assistant",
+      "period": "Jul 2024–Feb 2025"
+    },
+    {
+      "name": "Haoran WANG",
+      "role": "Research Assistant",
+      "period": "Summer 2023–Summer 2026"
+    },
+    {
+      "name": "Ruixue JIANG",
+      "role": "Research Assistant",
+      "period": "Fall 2025–Fall 2026"
+    }
+  ]
+}

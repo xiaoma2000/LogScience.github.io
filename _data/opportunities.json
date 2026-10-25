@@ -1,0 +1,44 @@
+{
+  "current": [
+    {
+      "id": "news-02",
+      "date": "2026-09-21",
+      "title": "课题组发布全奖博士招生信息",
+      "summary": "课题组发布面向2027年春季或秋季入学的博士招生信息，研究聚焦流域生物地球化学与地质背景调控的碳氮耦合循环。原文介绍了研究方向、申请要求及联系方式。",
+      "url": "https://mp.weixin.qq.com/s/rvSbC6fI7KytGVIGyF05Nw",
+      "image": "/images/news/2026-09-21-news-02.png",
+      "image_alt": "刘易老师照片",
+      "image_fit": "contain",
+      "image_width": 451,
+      "image_height": 451,
+      "category": "opportunities",
+      "title_en": "Fully funded PhD recruitment announcement",
+      "summary_en": "The lab shared PhD opportunities for Spring or Fall 2027, focusing on watershed biogeochemistry and geological controls on coupled carbon–nitrogen cycling. See the original announcement for its requirements.",
+      "positions": "1–2 PhD students",
+      "intake": "Spring or Fall 2027",
+      "research_focus": "Watershed biogeochemistry and geological controls on coupled carbon–nitrogen cycling",
+      "requirements": [
+        "Background in hydrology, physical geography, environmental science or a related field.",
+        "Strong motivation for field investigations and experimental research.",
+        "English proficiency meeting the University’s admission requirements."
+      ]
+    }
+  ],
+  "archived": [
+    {
+      "id": "news-14",
+      "date": "2025-09-16",
+      "title": "课题组发布地下水数值模拟研究助理招聘信息",
+      "summary": "课题组于2025年发布研究助理招聘公告，工作内容包括地质体、地下水流与溶质运移三维建模，以及样品测试协助。原文保留了当时的岗位要求与申请方式。",
+      "url": "https://mp.weixin.qq.com/s/bXdP-Ssmz2nPnYr7hBncww",
+      "image": "/images/news/2025-09-16-news-14.png",
+      "image_alt": "刘易老师照片",
+      "image_fit": "contain",
+      "image_width": 451,
+      "image_height": 451,
+      "category": "opportunities",
+      "title_en": "Research assistant recruitment in groundwater modeling",
+      "summary_en": "This 2025 announcement described a research assistant role involving geological, groundwater-flow and solute-transport modeling, together with laboratory support. The original post preserves the historical application details."
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+[
+  {
+    "id": "paper-01",
+    "year": 2026,
+    "order": 1,
+    "title": "Geological regulation of nitrous oxide emission risks in rivers globally",
+    "authors": [
+      {
+        "name": "Hongkai Qi",
+        "label": "Qi, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      },
+      {
+        "name": "Haoran Wang",
+        "label": "Wang, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yu Pang",
+        "label": "Pang, Y.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Junyu Li",
+        "label": "Li, J.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Xiao Ma",
+        "label": "Ma, X.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Longjun Wu",
+        "label": "Wu, L.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Ding He",
+        "label": "He, D.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jianping Gan",
+        "label": "Gan, J.",
+        "is_pi": false,
+        "corresponding": false
+      }
+    ],
+    "journal": "Communications Earth & Environment",
+    "volume": "7",
+    "issue": "1",
+    "locator": "219",
+    "doi": "10.1038/s43247-026-03250-3",
+    "url": "https://doi.org/10.1038/s43247-026-03250-3"
+  },
+  {
+    "id": "paper-02",
+    "year": 2026,
+    "order": 2,
+    "title": "Nitrogen cycle in the riverine hyporheic zone: A systematic review from processes to environmental function",
+    "authors": [
+      {
+        "name": "Junyi Zhuang",
+        "label": "Zhuang, J.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Ruixue Jiang",
+        "label": "Jiang, R.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Water Research",
+    "volume": "295",
+    "issue": "",
+    "locator": "125565",
+    "doi": "10.1016/j.watres.2026.125565",
+    "url": "https://doi.org/10.1016/j.watres.2026.125565"
+  },
+  {
+    "id": "paper-03",
+    "year": 2026,
+    "order": 3,
+    "title": "Abundance, composition, and environmental implications of iron minerals in highly permeable sandy beaches",
+    "authors": [
+      {
+        "name": "Yan Zhang",
+        "label": "Zhang, Y.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Cheng Xing",
+        "label": "Xing, C.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Liuqian Yu",
+        "label": "Yu, L.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Tian Fu",
+        "label": "Fu, T.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Shuoyu Zhang",
+        "label": "Zhang, S.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Chemical Geology",
+    "volume": "702",
+    "issue": "",
+    "locator": "123225",
+    "doi": "10.1016/j.chemgeo.2025.123225",
+    "url": "https://doi.org/10.1016/j.chemgeo.2025.123225"
+  },
+  {
+    "id": "paper-04",
+    "year": 2025,
+    "order": 4,
+    "title": "Seasonality of Radium Isotopes in an Intertidal Aquifer",
+    "authors": [
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      },
+      {
+        "name": "Rong Mao",
+        "label": "Mao, R.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Shengchao Yu",
+        "label": "Yu, S.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jiu Jimmy Jiao",
+        "label": "Jiao, J.J.",
+        "is_pi": false,
+        "corresponding": false
+      }
+    ],
+    "journal": "Journal of Geophysical Research: Oceans",
+    "volume": "130",
+    "issue": "4",
+    "locator": "e2024JC022059",
+    "doi": "10.1029/2024JC022059",
+    "url": "https://doi.org/10.1029/2024JC022059"
+  },
+  {
+    "id": "paper-05",
+    "year": 2025,
+    "order": 5,
+    "title": "Carbonate weathering enhances nitrogen assimilatory uptake in rivers globally",
+    "authors": [
+      {
+        "name": "Hongkai Qi",
+        "label": "Qi, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      },
+      {
+        "name": "Haoran Wang",
+        "label": "Wang, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Xingxing Kuang",
+        "label": "Kuang, X.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Aditya Nugraha Putra",
+        "label": "Putra, A.N.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jiu Jimmy Jiao",
+        "label": "Jiao, J.J.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jianping Gan",
+        "label": "Gan, J.",
+        "is_pi": false,
+        "corresponding": false
+      }
+    ],
+    "journal": "Nature Geoscience",
+    "volume": "18",
+    "issue": "5",
+    "locator": "402-409",
+    "doi": "10.1038/s41561-025-01680-w",
+    "url": "https://doi.org/10.1038/s41561-025-01680-w"
+  },
+  {
+    "id": "paper-06",
+    "year": 2025,
+    "order": 6,
+    "title": "A new 1,10-phenanthroline method for oxalate-extractable iron measurement",
+    "authors": [
+      {
+        "name": "Yan Zhang",
+        "label": "Zhang, Y.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Applied Geochemistry",
+    "volume": "183",
+    "issue": "",
+    "locator": "106354",
+    "doi": "10.1016/j.apgeochem.2025.106354",
+    "url": "https://doi.org/10.1016/j.apgeochem.2025.106354"
+  },
+  {
+    "id": "paper-07",
+    "year": 2025,
+    "order": 7,
+    "title": "Microplastic pollution in Pearl River networks: Characteristic, potential sources, and migration pathways",
+    "authors": [
+      {
+        "name": "Huan Wang",
+        "label": "Wang, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Tingting Zhu",
+        "label": "Zhu, T.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jun Wang",
+        "label": "Wang, J.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Water Research",
+    "volume": "276",
+    "issue": "",
+    "locator": "123261",
+    "doi": "10.1016/j.watres.2025.123261",
+    "url": "https://doi.org/10.1016/j.watres.2025.123261"
+  },
+  {
+    "id": "paper-08",
+    "year": 2025,
+    "order": 8,
+    "title": "The hyporheic exchange remarkably influences methane dynamics and effluxes in rivers",
+    "authors": [
+      {
+        "name": "Chao Gu",
+        "label": "Gu, C.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Mengqian Lu",
+        "label": "Lu, M.",
+        "is_pi": false,
+        "corresponding": true
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Journal of Hydrology",
+    "volume": "648",
+    "issue": "",
+    "locator": "132400",
+    "doi": "10.1016/j.jhydrol.2024.132400",
+    "url": "https://doi.org/10.1016/j.jhydrol.2024.132400",
+    "online_year": 2024
+  },
+  {
+    "id": "paper-09",
+    "year": 2024,
+    "order": 9,
+    "title": "Influences of carbonate weathering and hyporheic exchange on carbon fluxes in Pearl River Basin, China",
+    "authors": [
+      {
+        "name": "Chao Gu",
+        "label": "Gu, C.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      },
+      {
+        "name": "Hongkai Qi",
+        "label": "Qi, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Mengqian Lu",
+        "label": "Lu, M.",
+        "is_pi": false,
+        "corresponding": true
+      }
+    ],
+    "journal": "Water Research",
+    "volume": "261",
+    "issue": "",
+    "locator": "122014",
+    "doi": "10.1016/j.watres.2024.122014",
+    "url": "https://doi.org/10.1016/j.watres.2024.122014"
+  },
+  {
+    "id": "paper-10",
+    "year": 2023,
+    "order": 10,
+    "title": "Submarine Groundwater Discharge Strengthens Acidification in the Coastal Semi-Closed Bays",
+    "authors": [
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      },
+      {
+        "name": "Yurong Song",
+        "label": "Song, Y.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jiu Jimmy Jiao",
+        "label": "Jiao, J.J.",
+        "is_pi": false,
+        "corresponding": true
+      }
+    ],
+    "journal": "Geophysical Research Letters",
+    "volume": "50",
+    "issue": "17",
+    "locator": "e2023GL103788",
+    "doi": "10.1029/2023GL103788",
+    "url": "https://doi.org/10.1029/2023GL103788"
+  },
+  {
+    "id": "paper-11",
+    "year": 2023,
+    "order": 11,
+    "title": "Nitrogen removal through denitrification in China's aquatic system",
+    "authors": [
+      {
+        "name": "Hongkai Qi",
+        "label": "Qi, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Science of The Total Environment",
+    "volume": "891",
+    "issue": "",
+    "locator": "164317",
+    "doi": "10.1016/j.scitotenv.2023.164317",
+    "url": "https://doi.org/10.1016/j.scitotenv.2023.164317"
+  },
+  {
+    "id": "paper-12",
+    "year": 2026,
+    "order": -1,
+    "title": "Microplastic transport regulated by land use, point source and tidal forces in a coastal river-estuary system",
+    "authors": [
+      {
+        "name": "Xinke Li",
+        "label": "Li, X.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Huan Wang",
+        "label": "Wang, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Huanglin Luo",
+        "label": "Luo, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Cheng Xing",
+        "label": "Xing, C.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yan Zhang",
+        "label": "Zhang, Y.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Journal of Hazardous Materials",
+    "volume": "514",
+    "issue": "",
+    "locator": "142918",
+    "doi": "10.1016/j.jhazmat.2026.142918",
+    "url": "https://doi.org/10.1016/j.jhazmat.2026.142918"
+  },
+  {
+    "id": "paper-13",
+    "year": 2026,
+    "order": 0,
+    "title": "Unraveling dissolved inorganic nitrogen dynamics in a sandy beach: The role of tidal forces and aquifer heterogeneity",
+    "authors": [
+      {
+        "name": "Cheng Xing",
+        "label": "Xing, C.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yan Zhang",
+        "label": "Zhang, Y.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Hongkai Qi",
+        "label": "Qi, H.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Ding He",
+        "label": "He, D.",
+        "is_pi": false,
+        "corresponding": false
+      },
+      {
+        "name": "Yi Liu",
+        "label": "Liu, Y.",
+        "is_pi": true,
+        "corresponding": true
+      }
+    ],
+    "journal": "Journal of Hydrology",
+    "volume": "675",
+    "issue": "",
+    "locator": "135591",
+    "doi": "10.1016/j.jhydrol.2026.135591",
+    "url": "https://doi.org/10.1016/j.jhydrol.2026.135591"
+  }
+]

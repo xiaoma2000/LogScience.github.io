@@ -1,0 +1,68 @@
+{
+  "intro": "We study how geology and water movement shape the transport and transformation of carbon, nitrogen and contaminants from river basins to the coast, and use satellite observations to understand surface-water dynamics.",
+  "support_note": "Ongoing projects from Prof. Liu’s CV, supplemented by recent group announcements. Roles indicate his involvement in each project.",
+  "projects": [
+    {"id": "nsfc-river-metabolism", "funder": "NSFC General Program", "title": "Mechanisms and effects of geological controls on river ecosystem metabolism", "title_original": "地质背景调控河流生态系统新陈代谢的机制及效应研究", "year": 2026, "role": "PI", "source_url": "https://mp.weixin.qq.com/s/u1A2h2fpBC2pJd6qAIvx0w"},
+    {"id": "core-field-survey", "funder": "CORE Collaborative Research", "title": "Field survey on small water bodies in the Greater Bay Area and small watersheds in coastal China", "year": 2025, "role": "PI"},
+    {"id": "joint-carbon-audit", "funder": "Guangdong–Hong Kong Joint Funding Program (1+1+1)", "title": "Breaking New Ground in Carbon Neutrality: Integrating Building-Scale Carbon Audit into the Water-Energy-Carbon Nexus", "year": 2024, "role": "Co-PI"},
+    {"id": "rgc-aoe", "funder": "Hong Kong RGC Areas of Excellence Scheme", "title": "Study of the regional earth system for sustainable development under climate change in the Greater Bay Area", "year": 2024, "role": "Co-I"},
+    {"id": "nsfc-offshore-groundwater", "funder": "NSFC Key Program", "title": "Occurrence, discharge and evolution mechanism of offshore groundwater in the Pearl River Estuary and its continental shelf area", "year": 2021, "role": "Co-I"}
+  ],
+  "undergraduate_projects": {
+    "funder": "HKUST(GZ) Undergraduate X-Program", "year": 2025, "role": "PI",
+    "titles": ["Microplastics distribution in beach aquifers of the Greater Bay Area", "Beach aquifers as a natural filter for microplastics in seawater", "Microplastic treatment using electrochemical methods and mineral coprecipitation"]
+  },
+  "topics": [
+    {
+      "id": "watershed-biogeochemistry", "number": "01", "short_title": "Watershed biogeochemistry",
+      "title": "Geological Controls on Watershed Carbon and Nitrogen Cycling",
+      "question": "How does the underlying geology regulate riverine nutrient cycling and greenhouse gas emissions?",
+      "paragraphs": ["We combine catchment-scale field investigations, biogeochemical experiments and global data analysis to examine how rock weathering and lithology shape riverine carbon–nitrogen coupling.", "Our work has revealed how carbonate weathering enhances nitrogen assimilatory uptake and how geological settings influence nitrous oxide emission risks. These studies connect processes observed in the Pearl River Basin with broader patterns across river networks."],
+      "people": [{"id": "hongkai-qi", "name": "Hongkai QI"}],
+      "keywords": ["Rock weathering", "Carbon–nitrogen coupling", "Nitrous oxide"],
+      "image": "/images/research/watershed-carbon-nitrogen.webp", "image_alt": "Conceptual illustration of carbonate weathering and riverine nitrogen assimilation", "image_width": 1080, "image_height": 648,
+      "caption": "Carbonate weathering and riverine nitrogen uptake. Qi et al., Nature Geoscience (2025).", "image_source": "https://doi.org/10.1038/s41561-025-01680-w", "paper_ids": ["paper-05", "paper-01"]
+    },
+    {
+      "id": "coastal-groundwater", "number": "02", "short_title": "Coastal groundwater",
+      "title": "Coastal Groundwater Exchange and Biogeochemical Reactions",
+      "question": "How do tides, aquifer structure and reactive minerals control the material fluxes entering coastal waters?",
+      "paragraphs": ["We investigate coastal aquifers as reactive interfaces where fresh groundwater and seawater mix. Field monitoring, isotope tracing and laboratory experiments help us connect groundwater flow with nutrient transformations and submarine groundwater discharge.", "Current work examines dissolved inorganic nitrogen dynamics, the formation and distribution of iron minerals, and phosphorus retention in permeable sandy beaches. Cheng XING and Yan ZHANG contribute complementary perspectives on hydrological processes and mineral–water interactions."],
+      "people": [{"id": "cheng-xing", "name": "Cheng XING"}, {"id": "yan-zhang", "name": "Yan ZHANG"}],
+      "keywords": ["Submarine groundwater discharge", "Nutrient cycling", "Iron minerals"],
+      "image": "/images/research/coastal-iron-phosphorus.webp", "image_alt": "Sandy beach cross-section showing groundwater flow, iron mineral formation and phosphorus retention", "image_width": 1080, "image_height": 472,
+      "caption": "Iron cycling and phosphorus retention in a permeable sandy beach. Zhang et al., Chemical Geology (2026).", "image_source": "https://doi.org/10.1016/j.chemgeo.2025.123225", "paper_ids": ["paper-13", "paper-03"]
+    },
+    {
+      "id": "microplastic-transport", "number": "03", "short_title": "Microplastic transport",
+      "title": "Microplastic Transport from Watersheds to Coastal Estuaries",
+      "question": "Where do microplastics originate, and what controls their retention, remobilization and delivery to the ocean?",
+      "paragraphs": ["We track microplastic pollution along the land–river–estuary continuum, combining field sampling and particle characterization with spatial analysis of potential sources and transport pathways.", "Studies in the Pearl River network and coastal estuaries examine the combined roles of land use, point sources, hydrodynamics and sediment storage. Huan WANG and Xinke LI investigate how these processes affect the movement and fate of microplastics."],
+      "people": [{"id": "huan-wang", "name": "Huan WANG"}, {"id": "xinke-li", "name": "Xinke LI"}],
+      "keywords": ["Microplastic sources", "Sediment–water exchange", "Tidal dynamics"],
+      "image": "/images/research/microplastic-transport.webp", "image_alt": "Conceptual diagram of land-use sources, sediment storage and tidal remobilization of estuarine microplastics", "image_width": 865, "image_height": 574,
+      "caption": "Land use, point sources and tidal regulation of estuarine microplastic transport. Li et al., Journal of Hazardous Materials (2026).", "image_source": "https://doi.org/10.1016/j.jhazmat.2026.142918", "paper_ids": ["paper-07", "paper-12"]
+    },
+    {
+      "id": "hyporheic-exchange", "number": "04", "short_title": "Hyporheic exchange",
+      "title": "Hyporheic Exchange and Riverine Nitrogen Cycling",
+      "question": "How does exchange between river water, groundwater and riverbed sediments regulate nitrogen retention and removal?",
+      "paragraphs": ["We study the hyporheic zone as a dynamic interface linking groundwater and rivers. The focus is on how exchange pathways and biogeochemical reactions influence the transport, transformation and ecological functions of nitrogen.", "Junyi ZHUANG’s work develops this direction through research on hyporheic nitrogen cycling, including a systematic review connecting individual processes with environmental function. Related group studies on carbon fluxes provide a broader context for river–groundwater exchange."],
+      "people": [{"id": "junyi-zhuang", "name": "Junyi ZHUANG"}],
+      "keywords": ["Groundwater–river exchange", "Nitrogen transformations", "Environmental function"],
+      "image": "/images/research/river-hyporheic-carbon.webp", "image_alt": "Related group study illustrating hyporheic exchange within Pearl River Basin carbon fluxes", "image_width": 831, "image_height": 321,
+      "caption": "Related group work on hyporheic exchange and carbon fluxes. Gu et al., Water Research (2024).", "image_source": "https://doi.org/10.1016/j.watres.2024.122014", "paper_ids": ["paper-02", "paper-09"]
+    },
+    {
+      "id": "surface-water-remote-sensing", "number": "05", "short_title": "Surface-water remote sensing",
+      "title": "Satellite Remote Sensing of Surface-Water Dynamics",
+      "question": "How can continuous satellite observations reveal the timing and extent of changes in inland water coverage?", "stage": "Ongoing research",
+      "paragraphs": ["Huanglin LUO is developing an approach that combines Harmonized Landsat–Sentinel-2 observations with deep learning to reconstruct monthly, sub-pixel water fraction at 30 m resolution. The aim is to capture gradual changes in water coverage as well as the timing of expansion and contraction.", "The research links water-fraction time series with water-body inventories to characterize persistence, seasonality and transitions in rivers, reservoirs and small water bodies. The Greater Bay Area provides the initial study setting."],
+      "people": [{"id": "huanglin-luo", "name": "Huanglin LUO"}],
+      "keywords": ["Harmonized Landsat–Sentinel-2", "Deep learning", "Water surface phenology"],
+      "image": "/images/research/gba-surface-water-regimes.png", "image_alt": "Map of persistent water, seasonal drawdown and highly dynamic transition across the Greater Bay Area study domain", "image_width": 6732, "image_height": 4996, "expand_image": true,
+      "caption": "Surface-water dynamic regimes across the Greater Bay Area study domain. Ongoing research by Huanglin LUO.", "paper_ids": [],
+      "resource": {"label": "Data resource: NASA Harmonized Landsat–Sentinel-2", "url": "https://hls.gsfc.nasa.gov/products-description/"}
+    }
+  ]
+}

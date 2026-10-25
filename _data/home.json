@@ -1,0 +1,10 @@
+{
+  "news_limit": 3,
+  "featured_papers": [
+    "paper-05",
+    "paper-13",
+    "paper-12"
+  ],
+  "contact_heading": "Let's connect.",
+  "contact_text": "Research collaborations, academic enquiries and prospective team members."
+}

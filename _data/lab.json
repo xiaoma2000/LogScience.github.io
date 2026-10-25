@@ -1,0 +1,54 @@
+{
+  "name": "LogScience Lab",
+  "wordmark": "Land-Ocean-Groundwater Science",
+  "tagline": "Water, geology and environmental change",
+  "description": "The LogScience Lab at HKUST(GZ) studies groundwater, watershed biogeochemistry, land–ocean interactions and surface-water dynamics.",
+  "institution": "The Hong Kong University of Science and Technology (Guangzhou)",
+  "unit": "Earth, Ocean and Atmospheric Sciences (EOAS) Thrust · Function Hub",
+  "email": "yiliuyl@hkust-gz.edu.cn",
+  "faculty_url": "https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/LIU-Yi/yiliuyl",
+  "scholar_url": "https://scholar.google.com/citations?user=w1VsihwAAAAJ",
+  "admissions_url": "https://fytgs.hkust-gz.edu.cn/admissions/",
+  "eoas_url": "https://funh.hkust-gz.edu.cn/academics/earth-ocean-and-atmospheric-sciences/about-the-thrust/",
+  "address": [
+    "No. 1 Duxue Road",
+    "Nansha District, Guangzhou",
+    "Guangdong, China"
+  ],
+  "office": "E1 L6 601",
+  "homepage": {
+    "eyebrow": "Hydrogeology · Biogeochemistry",
+    "title": "Groundwater science, from river basins to the coast.",
+    "lede": "We investigate how water movement and geology shape carbon, nitrogen and contaminant cycles across connected landscapes."
+  },
+  "assets": {
+    "hero": "/images/group2.png",
+    "group": "/images/group2.png",
+    "field": "/images/field_trip_hongkai.png",
+    "pi": "/images/liuyi_website.png"
+  },
+  "pi_bio": "Research spans groundwater–surface water and land–ocean interactions, coastal hydrogeology and watershed biogeochemistry.",
+  "affiliations": [
+    {
+      "id": "eoas",
+      "name": "EOAS · HKUST(GZ)",
+      "image": "/images/affiliations/eoas.jpg",
+      "image_alt": "EOAS · HKUST(GZ) logo",
+      "url": "https://funh.hkust-gz.edu.cn/academics/earth-ocean-and-atmospheric-sciences/about-the-thrust/"
+    },
+    {
+      "id": "core",
+      "name": "CORE",
+      "image": "/images/affiliations/core.png",
+      "image_alt": "CORE logo",
+      "url": "https://core-hkmacau.hkust.edu.hk/"
+    },
+    {
+      "id": "earth-hk",
+      "name": "HKUST / Earth-HK",
+      "image": "/images/affiliations/hkust-earth-hk.jpg",
+      "image_alt": "HKUST / Earth-HK logo",
+      "url": "https://earthhk.hkust.edu.hk/"
+    }
+  ]
+}

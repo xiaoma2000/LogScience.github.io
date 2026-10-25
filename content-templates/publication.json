@@ -1,0 +1,19 @@
+{
+  "id": "replace-paper-id",
+  "year": null,
+  "order": 0,
+  "title": "替换为正式论文标题",
+  "authors": [
+    {
+      "name": "替换为完整姓名；按原文顺序补齐所有作者",
+      "label": "替换为文献引用中的作者名",
+      "is_pi": false,
+      "corresponding": false
+    }
+  ],
+  "journal": "替换为正式期刊名",
+  "volume": "替换为已核实卷号",
+  "locator": "替换为已核实页码或文章号",
+  "doi": "10.REPLACE/WITH-VERIFIED-DOI",
+  "url": "https://doi.org/10.REPLACE/WITH-VERIFIED-DOI"
+}

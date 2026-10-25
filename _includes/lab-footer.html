@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <div class="shell footer-main">
+    <div><p class="footer-name">LogScience Lab</p><p class="footer-description">{{ site.data.lab.tagline }}</p><p class="footer-affiliation">{{ site.data.lab.unit }}<br>{{ site.data.lab.institution }}</p></div>
+    <div><h2>Explore</h2><ul>{% for item in site.data.navigation.main offset:1 %}<li><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>{% endfor %}</ul></div>
+    <div><h2>Connect</h2><ul><li><a href="mailto:{{ site.data.lab.email }}">{{ site.data.lab.email }}</a></li><li><a href="{{ site.data.lab.faculty_url }}" target="_blank" rel="noopener noreferrer">Faculty profile <span aria-hidden="true">↗</span></a></li><li><a href="{{ site.data.lab.scholar_url }}" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a></li></ul><p class="footer-address">Nansha, Guangzhou, China</p></div>
+  </div>
+  <div class="shell footer-bottom"><span>© {{ site.time | date: '%Y' }} LogScience Lab</span></div>
+</footer>

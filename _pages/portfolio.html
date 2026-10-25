@@ -1,14 +1,17 @@
 ---
-layout: archive
-title: "LogScience Research Team"
-permalink: /portfolio/
-author_profile: true
+layout: lab
+title: "Team"
+section: team
+permalink: /team/
+sitemap: true
+description: "The people behind our research."
+redirect_from:
+  - /portfolio/
 ---
-
-{% include base_path %}
-
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+<div class="shell page-content">
+{% assign pi = site.data.team.groups[0].members[0] %}
+<article class="pi-card" id="member-{{ pi.id }}" aria-labelledby="person-{{ pi.id }}"><figure class="pi-photo">{% include lab-image.html src=pi.image alt="Yi LIU, Principal Investigator" loading="eager" %}</figure><div class="pi-body"><p class="eyebrow">Principal investigator</p><h2 id="person-{{ pi.id }}">{{ pi.name }}</h2><p class="pi-role">{{ pi.position }}</p><p>{{ site.data.lab.pi_bio }}</p><ul class="interests">{% for interest in pi.interests %}<li>{{ interest }}</li>{% endfor %}</ul><div class="button-row"><a class="text-link" href="{{ site.data.lab.faculty_url }}" target="_blank" rel="noopener noreferrer">University profile <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:{{ pi.email }}">{{ pi.email }} <span aria-hidden="true">↗</span></a></div></div></article>
+{% for group in site.data.team.groups offset:1 %}<section class="people-section" aria-labelledby="team-{{ group.id }}"><h2 class="people-section__title" id="team-{{ group.id }}">{{ group.title }}</h2><div class="people-grid">{% for member in group.members %}<article class="person-card" id="member-{{ member.id }}" aria-labelledby="person-{{ member.id }}"><figure class="person-photo">{% include lab-image.html src=member.image alt=member.name position=member.image_position %}</figure><div><h3 class="person-name" id="person-{{ member.id }}">{{ member.name }}{% if member.entry %} <span class="entry-label">({{ member.entry }})</span>{% endif %}</h3>{% if member.note %}<p class="person-note">{{ member.note }}</p>{% endif %}{% if member.education %}<p class="person-note">{{ member.education }}</p>{% endif %}{% if member.postdoc_supervisors %}<p class="person-note"><strong>Postdoctoral supervisors</strong><br>{% for supervisor in member.postdoc_supervisors %}{{ supervisor.name }} ({{ supervisor.institution }}){% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>{% endif %}<ul class="interests" aria-label="Research interests">{% for interest in member.interests %}<li>{{ interest }}</li>{% endfor %}</ul>{% if member.email %}<a class="person-email" href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}</div></article>{% endfor %}</div></section>{% endfor %}
+<section class="people-section" aria-labelledby="team-alumni"><h2 class="people-section__title" id="team-alumni">Alumni</h2><ul class="alumni-list">{% for member in site.data.team.alumni %}<li><strong>{{ member.name }}</strong><span>{{ member.role }} ({{ member.period }})</span></li>{% endfor %}</ul></section>
+<div class="contact-strip"><div><h2>Interested in joining us?</h2><p>Tell us about your research interests and background.</p></div><a class="button button--light" href="{{ '/contact/' | relative_url }}">Get in touch <span aria-hidden="true">↗</span></a></div>
+</div>

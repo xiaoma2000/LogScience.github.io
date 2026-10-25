@@ -1,0 +1,11 @@
+{
+  "id": "replace-member-id",
+  "name": "替换为确认的英文姓名",
+  "entry": "替换为确认的入组年份-now，例如2023-now；未知则删除本字段",
+  "email": "REPLACE@connect.hkust-gz.edu.cn",
+  "image": "/images/REPLACE-WITH-PUBLIC-PORTRAIT.webp",
+  "image_position": "50% 50%",
+  "interests": [
+    "替换为成员确认的研究兴趣"
+  ]
+}
