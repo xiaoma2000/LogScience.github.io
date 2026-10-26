@@ -20,7 +20,7 @@
 | 论文 | `_data/group_publications.json` | 按用户确认的收录范围更新；保存完整作者顺序、通信作者标记、DOI 与书目信息 |
 | 研究和项目 | `_data/research.json` | `people[].id` 引用成员，`paper_ids` 引用论文；项目角色保留 `PI`、`Co-PI`、`Co-I` |
 | 首页精选 | `_data/home.json` | 用论文 ID 配置精选；`news_limit` 控制最近新闻条数；`contact_heading`、`contact_text` 控制首页联系文案 |
-| 首页轮播 | `_data/home.json` 的 `gallery` | 原group2合照＋新增五图，共六图；每图image/image_alt/caption仍保留，首页captions=false隐藏图注。interval=2000、controls=dots、autoplay=true；下方仅六点，当前黑/其他白。第一张及下一张预加载，保留完整人物 |
+| 首页轮播 | `_data/home.json` 的 `gallery` | 原group2合照＋新增五图，共六图；每图image/image_alt/caption仍保留，首页captions=false隐藏图注。interval=2000、controls=dots、autoplay=true、transition=fade（0.5秒）；下方仅六点，当前黑/其他白，五项方法小字已删除。第一张及下一张预加载，保留完整人物 |
 | 站内毕业专题 | `_data/milestones.json` 和 `_pages/mphil-graduation-2026.html` | 保存学生、论文题目、答辩时间、地点、委员会及照片；站内新闻必须有匹配 permalink 的源文件 |
 | Platform | `_data/platform.json` | 四个 `sections`：监测/模型站点、多层采样器、共享分析条件与方法、遥感数据；`layout`分别为stations、feature、analysis、datasets |
 | 名称、联系与首页文案 | `_data/lab.json` | 集中维护名称、简介、公开邮箱、地址及 `homepage`、`assets`；未知办公室允许为 `null` |
@@ -32,7 +32,7 @@
 
 新闻始终按 `date` 倒序，新增记录不靠插入位置控制顺序。通常用原文发布日期；如用户明确要求用接受日期或活动日期，增加 `date_note_en` / `date_note`（如 Accepted / 论文接受），原推文日期另记 `source_date`。news-27采用接受2026-02-12，推文2026-03-12；news-28采用两场答辩中较晚的2026-07-25并标Thesis defenses，不代表毕业或发稿日。
 
-原生新闻设 `link_type: "internal"`，`url: "/news/slug/"`，正文源文件放 `_pages/` 并声明完全一致的 `permalink`。外部新闻默认新标签页打开，站内新闻在当前页打开；两个入口都支持学生Pages子路径。卡片双图可增加 `gallery`（每图image/image_alt/caption），共用首页轮播组件。新闻仍用前后/Play按钮：手动切换暂停，点Play恢复，减少动态效果时默认暂停。首页则按用户明确要求用2秒自动播放模式，无左右或Play按钮，圆点可直接选图；选图后移开继续，不因手动选择永久暂停。鼠标悬停、键盘可见焦点、页面隐藏或离开视口时暂时停止；首页明确自动播放的设置优先于旧的减少动态效果默认暂停规则（只直接换图，无平移动画）。无JS仍可横向滑动看图。
+原生新闻设 `link_type: "internal"`，`url: "/news/slug/"`，正文源文件放 `_pages/` 并声明完全一致的 `permalink`。外部新闻默认新标签页打开，站内新闻在当前页打开；两个入口都支持学生Pages子路径。卡片双图可增加 `gallery`（每图image/image_alt/caption），共用首页轮播组件。新闻仍用前后/Play按钮：手动切换暂停，点Play恢复，减少动态效果时默认暂停。首页则按用户明确要求用2秒自动播放及0.5秒交叉淡入淡出，无左右或Play按钮，圆点可直接选图；选图后移开继续，不因手动选择永久暂停。鼠标悬停、键盘可见焦点、页面隐藏或离开视口时暂时停止；首页明确要求的播放/过渡设置优先于旧的减少动态效果默认规则。首屏先初始化再启用过渡，避免六图同时闪现；非当前图aria-hidden及inert，新闻非当前图仍hidden。无JS仍可横向滑动看图。
 
 Platform每个资源项使用 `title`、`summary`；可选 `paragraphs`、`caption`、`kicker`。图片需同时提供 `image_alt`，选图保留完整图例；站点、采样器和方法图可点开本地原尺寸导出图，链接必须经过relative_url。`facts`是label/value数组；`links`是label/url数组，用于论文或方法参考。兼容单个 `url` / `link_label`，外链须HTTP(S)。共享设施写在section.facility，含name/summary/url/equipment_url/image/image_alt及instruments数组（每项title/summary/image/image_alt），不能把学校共享设备写成组内所有。
 
@@ -120,6 +120,6 @@ node --test tests/*.cjs
 
 机构标识在lab.affiliations中，每条有稳定id、name、image/image_alt和官方url。首页只显示用户提供的原图，保留比例/颜色；2号为HKUST/Earth-HK，不能标为HKUST(GZ)。导航背景为官方HKUST Blue #003366，白字，当前页金色细线。
 
-页眉左侧用LOG原图，右侧Land/Ocean/Groundwater三行HTML文字，只加粗首字母L/O/G，手机320px也保留全部单词。无需重绘或修改原logo图片。Platform通过front matter的hide_description:true隐藏页标题下的冗余说明，description仍用于meta/分享信息；其他栏目介绍不受影响。
+页眉左侧采用用户最新LOG logo2.png横向原设计，右侧Land/Ocean/Groundwater三行HTML文字，只加粗首字母L/O/G，手机320px也保留全部单词。原PNG复制不改图案，Sharp生成优化副本，CSS适配横向显示；导航菜单断点1140px。Platform通过front matter的hide_description:true隐藏页标题下的冗余说明，description仍用于meta/分享信息；其他栏目介绍不受影响。
 
 人物新闻可设置image_fit为contain、image_shape为portrait：桌面较高竖图，手机原比例完整显示。课程等参考资料可移至素材reference_only，不自动发布为News。

@@ -419,12 +419,12 @@
     "source_bytes": 100022,
     "bytes": 48224
   },
-  "/images/updates/2026-10-26/logscience-logo.png": {
-    "src": "/images/site/logscience-logo-10c54884dc.webp",
+  "/images/updates/2026-10-26/logscience-logo2.png": {
+    "src": "/images/site/logscience-logo2-a233dce214.webp",
     "width": 1000,
-    "height": 530,
-    "source_bytes": 990037,
-    "bytes": 52962
+    "height": 333,
+    "source_bytes": 786562,
+    "bytes": 25552
   },
   "/images/updates/2026-10-26/xinke-defense.jpg": {
     "src": "/images/site/xinke-defense-a410e3ade0.webp",

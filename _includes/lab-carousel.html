@@ -1,4 +1,4 @@
-<div class="photo-carousel photo-carousel--{{ include.variant | default: 'home' }}" data-carousel data-interval="{{ include.interval | default: 6500 }}" data-autoplay="{{ include.autoplay | default: false }}" role="region" aria-roledescription="carousel" aria-label="{{ include.label | escape }}">
+<div class="photo-carousel photo-carousel--{{ include.variant | default: 'home' }}{% if include.transition == 'fade' %} photo-carousel--fade{% endif %}" data-carousel data-interval="{{ include.interval | default: 6500 }}" data-autoplay="{{ include.autoplay | default: false }}" role="region" aria-roledescription="carousel" aria-label="{{ include.label | escape }}">
   <div class="carousel-viewport">
     {% for photo in include.photos %}<figure class="carousel-slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ include.photos.size }}">
       {% if include.href %}<a class="carousel-photo-link" href="{{ include.href }}"{% if include.external %} target="_blank" rel="noopener noreferrer"{% endif %} tabindex="-1">{% endif %}

@@ -19,17 +19,29 @@
     goTo(index) { if(Number.isInteger(index)&&index>=0&&index<this.count)this.index=index; if(!this.autoplay)this.pause(); return this.index; }
     tick() { return this.playing ? this.move(1) : this.index; }
   }
+  function updateSlides(slides,index,fade=false) {
+    slides.forEach((slide,i)=>{
+      const active=i===index;
+      slide.hidden=!active&&!fade;
+      slide.classList.toggle('is-current',active);
+      slide.setAttribute('aria-hidden',String(!active));
+      slide.inert=!active;
+    });
+  }
   function mount(doc) {
     const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
     doc.querySelectorAll('[data-carousel]').forEach(el=>{
       const slides=[...el.querySelectorAll('[data-carousel-slide]')], controls=el.querySelector('[data-carousel-controls]');
       if(slides.length<2)return;
       const autoplay=el.dataset.autoplay==='true';
+      const fade=el.classList.contains('photo-carousel--fade');
       const policy=new CarouselPolicy(slides.length,motion.matches,{autoplay}), count=el.querySelector('[data-carousel-count]'), toggle=el.querySelector('[data-carousel-toggle]'), dots=[...el.querySelectorAll('[data-carousel-dot]')];
       const interval=Number(el.dataset.interval)||6500;
-      el.classList.add('is-enhanced'); controls.hidden=false;
+      el.classList.add('is-enhanced');
+      if(fade)el.classList.add('is-initializing');
+      controls.hidden=false;
       function render(announce=false) {
-        slides.forEach((slide,i)=>{slide.hidden=i!==policy.index;});
+        updateSlides(slides,policy.index,fade);
         if(count){count.setAttribute('aria-live',announce?'polite':'off');count.textContent=(policy.index+1)+' / '+slides.length;count.setAttribute('aria-label','Photo '+(policy.index+1)+' of '+slides.length);}
         if(toggle){toggle.textContent=policy.paused?'Play':'Pause';toggle.setAttribute('aria-label',policy.paused?'Play slideshow':'Pause slideshow');}
         dots.forEach((dot,i)=>dot.setAttribute('aria-pressed',String(i===policy.index)));
@@ -49,8 +61,9 @@
       motion.addEventListener('change',e=>{policy.reduceMotion(e.matches);render();});
       if('IntersectionObserver' in window)new IntersectionObserver(entries=>{policy.set('offscreen',!entries[0].isIntersecting);},{threshold:0.1}).observe(el);
       render();
+      if(fade){el.getBoundingClientRect();el.classList.remove('is-initializing');}
       window.setInterval(()=>{visible();const rect=el.getBoundingClientRect();policy.set('offscreen',policy.flags.offscreen||rect.bottom<=0||rect.top>=window.innerHeight);if(policy.playing){policy.tick();render();}},interval);
     });
   }
-  return {CarouselPolicy,mount};
+  return {CarouselPolicy,updateSlides,mount};
 });

@@ -13,8 +13,7 @@ redirect_from:
 {% assign lab = site.data.lab %}
 <section class="home-hero shell">
   <div class="hero-copy"><div><p class="eyebrow">{{ lab.homepage.eyebrow }}</p><h1>{{ lab.homepage.title }}</h1></div><div><p class="lede">{{ lab.homepage.lede }}</p><div class="button-row"><a class="button" href="{{ '/research/' | relative_url }}">Explore our research <span aria-hidden="true">↗</span></a><a class="button button--light" href="#latest-news">Latest from the lab <span aria-hidden="true">↓</span></a></div></div></div>
-  {% include lab-carousel.html photos=site.data.home.gallery variant="home" label="Life at LogScience Lab" interval=2000 captions=false controls="dots" autoplay=true %}
-  <div class="methods-strip" aria-label="Our methods"><span>Field observations</span><span>Isotope tracing</span><span>Laboratory experiments</span><span>Numerical modeling</span><span>Satellite remote sensing</span></div>
+  {% include lab-carousel.html photos=site.data.home.gallery variant="home" label="Life at LogScience Lab" interval=2000 captions=false controls="dots" autoplay=true transition="fade" %}
 </section>
 <section class="section shell" id="latest-news" aria-labelledby="latest-title">
   <div class="section-head"><div><p class="eyebrow">Research & community</p><h2 id="latest-title">Latest from the lab</h2></div><a class="text-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">↗</span></a></div>

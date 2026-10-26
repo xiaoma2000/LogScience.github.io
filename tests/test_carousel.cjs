@@ -44,3 +44,30 @@ test('dot selection validates its target and retains manual pause for other caro
   assert.equal(c.goTo(1),1); assert.equal(c.playing,false);
   for(const bad of [-1,2,NaN,0.5]) assert.equal(c.goTo(bad),1);
 });
+
+function slideFixture(){
+  const classes=new Set(),attrs={};
+  return {hidden:false,inert:false,classes,attrs,
+    classList:{toggle:(name,on)=>on?classes.add(name):classes.delete(name)},
+    setAttribute:(name,value)=>attrs[name]=value};
+}
+
+test('crossfade retains both visual layers but exposes only the active slide to interaction',()=>{
+  const {updateSlides}=require('../assets/js/lab-carousel.js');
+  const slides=Array.from({length:6},slideFixture);
+  updateSlides(slides,0,true); updateSlides(slides,1,true);
+  assert.ok(slides.every(s=>!s.hidden),'outgoing slide must stay available while it fades out');
+  assert.deepEqual(slides.map(s=>s.classes.has('is-current')),[false,true,false,false,false,false]);
+  assert.equal(slides[0].inert,true); assert.equal(slides[0].attrs['aria-hidden'],'true');
+  assert.equal(slides[1].inert,false); assert.equal(slides[1].attrs['aria-hidden'],'false');
+  updateSlides(slides,5,true); updateSlides(slides,0,true);
+  assert.equal(slides.filter(s=>s.classes.has('is-current')).length,1);
+});
+
+test('non-fading news carousel keeps inactive slides hidden',()=>{
+  const {updateSlides}=require('../assets/js/lab-carousel.js');
+  const slides=Array.from({length:2},slideFixture);
+  updateSlides(slides,1,false);
+  assert.equal(slides[0].hidden,true); assert.equal(slides[1].hidden,false);
+  assert.equal(slides[0].inert,true); assert.equal(slides[1].inert,false);
+});
