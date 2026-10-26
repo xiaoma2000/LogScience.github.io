@@ -1,6 +1,5 @@
 {
   "intro": "We study how geology and water movement shape the transport and transformation of carbon, nitrogen and contaminants from river basins to the coast, and use satellite observations to understand surface-water dynamics.",
-  "support_note": "Ongoing projects from Prof. Liu’s CV, supplemented by recent group announcements. Roles indicate his involvement in each project.",
   "projects": [
     {"id": "nsfc-river-metabolism", "funder": "NSFC General Program", "title": "Mechanisms and effects of geological controls on river ecosystem metabolism", "title_original": "地质背景调控河流生态系统新陈代谢的机制及效应研究", "year": 2026, "role": "PI", "source_url": "https://mp.weixin.qq.com/s/u1A2h2fpBC2pJd6qAIvx0w"},
     {"id": "core-field-survey", "funder": "CORE Collaborative Research", "title": "Field survey on small water bodies in the Greater Bay Area and small watersheds in coastal China", "year": 2025, "role": "PI"},
@@ -8,10 +7,27 @@
     {"id": "rgc-aoe", "funder": "Hong Kong RGC Areas of Excellence Scheme", "title": "Study of the regional earth system for sustainable development under climate change in the Greater Bay Area", "year": 2024, "role": "Co-I"},
     {"id": "nsfc-offshore-groundwater", "funder": "NSFC Key Program", "title": "Occurrence, discharge and evolution mechanism of offshore groundwater in the Pearl River Estuary and its continental shelf area", "year": 2021, "role": "Co-I"}
   ],
-  "undergraduate_projects": {
-    "funder": "HKUST(GZ) Undergraduate X-Program", "year": 2025, "role": "PI",
-    "titles": ["Microplastics distribution in beach aquifers of the Greater Bay Area", "Beach aquifers as a natural filter for microplastics in seawater", "Microplastic treatment using electrochemical methods and mineral coprecipitation"]
-  },
+  "undergraduate_projects": [
+    {
+      "funder": "HKUST(GZ) Undergraduate X-Program",
+      "year": 2025,
+      "role": "PI",
+      "titles": [
+        "Microplastics distribution in beach aquifers of the Greater Bay Area",
+        "Beach aquifers as a natural filter for microplastics in seawater",
+        "Microplastic treatment using electrochemical methods and mineral coprecipitation"
+      ]
+    },
+    {
+      "funder": "HKUST(GZ) Undergraduate Summer Basic Research Training Program (UBRTP)",
+      "year": 2024,
+      "role": "PI",
+      "status": "Completed",
+      "titles": [
+        "Terrestrial contaminant loading to South China Sea via Pearl River discharge"
+      ]
+    }
+  ],
   "topics": [
     {
       "id": "watershed-biogeochemistry", "number": "01", "short_title": "Watershed biogeochemistry",

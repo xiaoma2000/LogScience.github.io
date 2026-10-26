@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate LogScience JSON content and optionally six built Jekyll routes.
+"""Validate LogScience JSON content, core routes and local News stories.
 
 Uses Python's standard library; never changes content or requests remote URLs.
 """
@@ -16,7 +16,7 @@ import sys
 from urllib.parse import unquote, urljoin, urlsplit
 
 
-CORE_ROUTES = ("/", "/research/", "/team/", "/publications/", "/news/", "/contact/")
+CORE_ROUTES = ("/", "/research/", "/team/", "/publications/", "/platform/", "/news/", "/contact/")
 DATA_FILES = ("news", "team", "research", "group_publications", "home")
 ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 DOI_PATTERN = re.compile(r"^10\.\d{4,9}/\S+$", re.IGNORECASE)
@@ -37,6 +37,7 @@ class ContentChecker:
         self.root = Path(root).resolve()
         self.errors = []
         self.counts = {}
+        self.story_routes = set()
 
     def error(self, where, message):
         self.errors.append(f"{where}: {message}")
@@ -169,12 +170,39 @@ class ContentChecker:
         except ValueError:
             self.error(where + ".date", "must be a real ISO date in YYYY-MM-DD format")
         url = record.get("url")
-        if self.web_url(url, where + ".url"):
+        valid_url = self.local_story_url(url, where + ".url") if record.get("link_type") == "internal" else self.web_url(url, where + ".url")
+        if "link_type" in record and record["link_type"] not in ("internal", "external"):
+            self.error(where + ".link_type", "must be internal or external")
+        if valid_url:
             normalized = url.rstrip("/")
             if normalized in seen_urls:
                 self.error(where + ".url", "duplicate url: " + url)
             seen_urls.add(normalized)
         self.image(record, where, required=True, alt_required=True)
+        self.gallery(record, where)
+
+    def local_story_url(self, value, where):
+        if not isinstance(value, str) or not re.fullmatch(r"/news/[a-z0-9]+(?:-[a-z0-9]+)*/", value):
+            self.error(where, "local news URL must be a safe /news/slug/ path")
+            return False
+        pages = self.root / "_pages"
+        pattern = re.compile(r"^permalink:\s*['\"]?" + re.escape(value) + r"['\"]?\s*$", re.M)
+        for page in pages.glob("*"):
+            if page.suffix not in (".md", ".html"):
+                continue
+            raw = page.read_text(encoding="utf-8-sig")
+            frontmatter = raw.split("---", 2)[1] if raw.startswith("---") else ""
+            if pattern.search(frontmatter):
+                self.story_routes.add(value)
+                return True
+        self.error(where, "missing local news page with matching permalink: " + value)
+        return False
+
+    def gallery(self, record, where):
+        if "gallery" in record:
+            for photo, location in self.objects(record["gallery"], where + ".gallery"):
+                self.image(photo, location, required=True, alt_required=True)
+                self.text(photo, "caption", location)
 
     def check_news(self, news):
         seen_ids, seen_urls = set(), set()
@@ -230,13 +258,17 @@ class ContentChecker:
                 if "email" in member and not EMAIL_PATTERN.fullmatch(str(member["email"])):
                     self.error(location + ".email", "must be a valid email address")
                 self.image(member, location, required=True)
-        for member, where in self.objects(team.get("alumni"), "team.alumni"):
-            for key in ("name", "role", "period"):
+        alumni = self.objects(team.get("alumni"), "team.alumni")
+        for member, where in alumni:
+            for key in ("name", "period"):
                 self.text(member, key, where)
+            for key in ("role", "destination"):
+                self.text(member, key, where, optional=True)
             if "id" in member:
                 self.identifier(member, where, member_ids, "member id")
             self.image(member, where)
         self.counts["members"] = len(member_ids)
+        self.counts["alumni"] = len(alumni)
         return member_ids
 
     def check_publications(self, publications):
@@ -305,9 +337,12 @@ class ContentChecker:
             self.identifier(project, where, project_ids)
             self.project(project, where)
         if "undergraduate_projects" in research:
-            project = self.object_data(research["undergraduate_projects"], "research.undergraduate_projects")
-            titles = self.strings(project.get("titles"), "research.undergraduate_projects.titles")
-            self.project(dict(project, title=titles[0] if titles else ""), "research.undergraduate_projects")
+            total = 0
+            for project, where in self.objects(research["undergraduate_projects"], "research.undergraduate_projects"):
+                titles = self.strings(project.get("titles"), where + ".titles")
+                self.project(dict(project, title=titles[0] if titles else ""), where)
+                total += len(titles)
+            self.counts["undergraduate_projects"] = total
         for topic, where in self.objects(research.get("topics"), "research.topics"):
             self.identifier(topic, where, topic_ids)
             for key in ("title", "short_title", "question", "caption"):
@@ -337,6 +372,7 @@ class ContentChecker:
             self.error("home.news_limit", "must be a positive integer")
         for key in ("contact_heading", "contact_text"):
             self.text(home, key, "home")
+        self.gallery(home, "home")
 
     def check_lab(self, lab):
         lab = self.object_data(lab, "lab")
@@ -382,6 +418,70 @@ class ContentChecker:
                     self.error(where + "." + key, "must be a positive integer")
         self.counts["delivery_images"] = len(manifest)
 
+    def check_platform(self, platform):
+        platform = self.object_data(platform, "platform")
+        self.text(platform, "intro", "platform")
+        ids = set()
+        for section, where in self.objects(platform.get("sections"), "platform.sections"):
+            self.identifier(section, where, ids)
+            for key in ("title", "description"):
+                self.text(section, key, where)
+            items = self.objects(section.get("items"), where + ".items")
+            if not items:
+                self.text(section, "empty", where)
+            for item, location in items:
+                self.platform_item(item, location)
+            if "facility" in section:
+                location = where + ".facility"
+                facility = self.object_data(section["facility"], location)
+                for key in ("name", "summary"):
+                    self.text(facility, key, location)
+                for key in ("url", "equipment_url"):
+                    self.web_url(facility.get(key), location + "." + key)
+                self.image(facility, location, alt_required="image" in facility)
+                for instrument, item_where in self.objects(facility.get("instruments"), location + ".instruments"):
+                    self.platform_item(instrument, item_where)
+
+    def platform_item(self, item, where):
+        for key in ("title", "summary"):
+            self.text(item, key, where)
+        for key in ("url", "download_url"):
+            if key in item:
+                self.web_url(item[key], where + "." + key)
+        if "status" in item and item["status"] not in ("planned", "in-development", "released"):
+            self.error(where + ".status", "dataset status must be planned, in-development or released")
+        if "download_url" in item and item.get("status") != "released":
+            self.error(where + ".download_url", "an unreleased dataset cannot offer a download")
+        if "paragraphs" in item:
+            self.strings(item["paragraphs"], where + ".paragraphs")
+        if "facts" in item:
+            for fact, location in self.objects(item["facts"], where + ".facts"):
+                for key in ("label", "value"):
+                    self.text(fact, key, location)
+        if "links" in item:
+            for link, location in self.objects(item["links"], where + ".links"):
+                self.text(link, "label", location)
+                self.web_url(link.get("url"), location + ".url")
+        self.image(item, where, alt_required="image" in item)
+
+    def check_milestones(self, milestones):
+        milestones = self.object_data(milestones, "milestones")
+        for key, record in milestones.items():
+            where = "milestones." + key
+            record = self.object_data(record, where)
+            self.text(record, "intro", where)
+            for student, location in self.objects(record.get("students"), where + ".students"):
+                for field in ("name", "title", "paragraph", "venue"):
+                    self.text(student, field, location)
+                try:
+                    date.fromisoformat(student.get("date", ""))
+                except (TypeError, ValueError):
+                    self.error(location + ".date", "must be a real ISO date")
+                if not re.fullmatch(r"(?:[01]\d|2[0-3]):[0-5]\d", str(student.get("time", ""))):
+                    self.error(location + ".time", "must be a valid HH:MM time")
+                self.strings(student.get("committee"), location + ".committee")
+                self.image(student, location, required=True, alt_required=True)
+
     def check_source(self):
         data = {name: self.load(name) for name in DATA_FILES}
         news_ids, news_urls = self.check_news(data["news"])
@@ -392,6 +492,10 @@ class ContentChecker:
         paper_ids = self.check_publications(data["group_publications"])
         self.check_research(data["research"], member_ids, paper_ids)
         self.check_home(data["home"], paper_ids)
+        for name, check in (("platform", self.check_platform), ("milestones", self.check_milestones)):
+            content = self.load(name, optional=True)
+            if content is not None:
+                check(content)
         lab = self.load("lab", optional=True)
         if lab is not None:
             self.check_lab(lab)
@@ -459,7 +563,7 @@ def check_built(checker, site_dir, baseurl="", site_url=""):
             cache[path] = page
         return cache[path]
 
-    for route in CORE_ROUTES:
+    for route in (*CORE_ROUTES, *sorted(checker.story_routes)):
         source = site_dir / route.strip("/") / "index.html"
         where = "built " + route
         if not source.is_file():

@@ -1,0 +1,16 @@
+{
+  "id": "news-REPLACE",
+  "date": "2026-10-26",
+  "date_note_en": "Event",
+  "date_note": "活动",
+  "link_type": "internal",
+  "url": "/news/replace-with-slug/",
+  "title": "替换为确认的中文标题",
+  "title_en": "REPLACE with a confirmed English title",
+  "summary": "替换为原始资料支持的摘要",
+  "summary_en": "REPLACE with a factual summary",
+  "category": "community",
+  "image": "/images/REPLACE.jpg",
+  "image_alt": "替换为图片说明",
+  "image_alt_en": "REPLACE with image description"
+}

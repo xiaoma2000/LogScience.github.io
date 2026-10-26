@@ -17,6 +17,9 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Platform"
+    url: /platform/
+
   - title: "News"
     url: /news/
 

@@ -6,5 +6,37 @@
     "paper-12"
   ],
   "contact_heading": "Let's connect.",
-  "contact_text": "Research collaborations, academic enquiries and prospective team members."
+  "contact_text": "Research collaborations, academic enquiries and prospective team members.",
+  "gallery": [
+    {
+      "image": "/images/group2.png",
+      "image_alt": "LogScience team beside the river holding the 2024 Earth-HK research banner",
+      "caption": "LogScience field team · 2024"
+    },
+    {
+      "image": "/images/updates/2026-10-26/field-team-july-28.jpg",
+      "image_alt": "LogScience field team with the survey vehicle and research banner",
+      "caption": "In the field · The people behind the science"
+    },
+    {
+      "image": "/images/updates/2026-10-26/field-team-july-17.jpg",
+      "image_alt": "Team members gathered with the field survey vehicle",
+      "caption": "Field investigations · Connecting observations across landscapes"
+    },
+    {
+      "image": "/images/updates/2026-10-26/academic-exchange.jpg",
+      "image_alt": "An academic presentation introducing the research team",
+      "caption": "Academic exchange · Sharing questions, methods and ideas"
+    },
+    {
+      "image": "/images/updates/2026-10-26/doctoral-graduation.jpg",
+      "image_alt": "A doctoral graduation ceremony with a graduate and supervisor",
+      "caption": "Graduation · Celebrating a research milestone"
+    },
+    {
+      "image": "/images/updates/2026-10-26/graduation-group.jpg",
+      "image_alt": "A graduate and faculty members celebrating graduation together",
+      "caption": "Our community · Celebrating the next chapter"
+    }
+  ]
 }

@@ -1,5 +1,20 @@
 [
   {
+    "id": "news-26",
+    "date": "2026-10-21",
+    "title": "王焕与邢程获第四届EOAS学术沙龙优秀墙报奖",
+    "summary": "第四届地球与海洋大气科学学术沙龙于10月16日至18日在港科大（广州）举办，聚焦气候变化背景下的地球系统与人类社会。课题组王焕、邢程获优秀墙报奖，与来自二十余所高校及科研院所的学者交流。",
+    "url": "https://mp.weixin.qq.com/s/CYBbfR1wS-wzFCRy7P_asw",
+    "image": "/images/updates/2026-10-26/eoas-salon-awards.jpg",
+    "image_alt": "第四届EOAS学术沙龙优秀墙报奖颁奖合照",
+    "image_fit": "contain",
+    "category": "community",
+    "source": "EOAS",
+    "title_en": "Huan WANG and Cheng XING win poster awards at the fourth EOAS Academic Salon",
+    "summary_en": "Huan WANG and Cheng XING received Outstanding Poster Awards at the fourth EOAS Academic Salon, held at HKUST(GZ) on 16–18 October. The event brought together scholars from more than 20 universities and research institutes to discuss Earth systems and society under climate change.",
+    "image_alt_en": "Outstanding Poster Award recipients at the fourth EOAS Academic Salon"
+  },
+  {
     "id": "news-01",
     "date": "2026-10-03",
     "title": "王焕获复旦–ACS环境论坛优秀海报奖",
@@ -30,6 +45,36 @@
     "title_en": "Yi LIU awarded an NSFC General Program project",
     "summary_en": "The project on geological regulation of river ecosystem metabolism was awarded funding under the 2026 NSFC General Program, as part of the Function Hub’s successful applications.",
     "image_alt_en": "Yi LIU, principal investigator of the LogScience Lab"
+  },
+  {
+    "id": "news-28",
+    "date": "2026-07-25",
+    "date_note_en": "Thesis defenses",
+    "date_note": "论文答辩",
+    "link_type": "internal",
+    "source": "LogScience Lab",
+    "title": "祝贺Yuke LI与Xinke LI通过MPhil论文答辩并顺利毕业",
+    "summary": "Yuke LI与Xinke LI分别于7月24日和25日完成MPhil论文答辩，并顺利从港科大（广州）毕业。两项研究分别关注大湾区小水体的碳排放，以及河口系统中的微塑料输移。",
+    "url": "/news/mphil-graduation-2026/",
+    "image": "/images/updates/2026-10-26/yuke-defense.jpg",
+    "image_alt": "Yuke LI在MPhil论文答辩后的合照",
+    "image_fit": "contain",
+    "category": "community",
+    "title_en": "Congratulations to Yuke LI and Xinke LI on their MPhil defenses and graduation",
+    "summary_en": "Yuke LI and Xinke LI successfully defended their MPhil theses on 24 and 25 July and have graduated from HKUST(GZ). Their work examines greenhouse-gas emissions from small water bodies in the Greater Bay Area and microplastic transport in a coastal river–estuary system.",
+    "image_alt_en": "Yuke LI with her thesis examination committee after her MPhil defense",
+    "gallery": [
+      {
+        "image": "/images/updates/2026-10-26/yuke-defense.jpg",
+        "image_alt": "Yuke LI with her thesis examination committee after her MPhil defense",
+        "caption": "Yuke LI · MPhil thesis defense · 24 Jul 2026"
+      },
+      {
+        "image": "/images/updates/2026-10-26/xinke-defense.jpg",
+        "image_alt": "Xinke LI with her thesis examination committee after her MPhil defense",
+        "caption": "Xinke LI · MPhil thesis defense · 25 Jul 2026"
+      }
+    ]
   },
   {
     "id": "news-04",
@@ -126,6 +171,24 @@
     "title_en": "Geological controls on riverine nitrous oxide emission risks",
     "summary_en": "Combining Pearl River Basin experiments and global data, our research links bedrock geology, sediments and water chemistry with denitrification and nitrous oxide risks. Published in Communications Earth & Environment.",
     "image_alt_en": "Geological controls on riverine nitrous oxide generation"
+  },
+  {
+    "id": "news-27",
+    "date": "2026-02-12",
+    "date_note_en": "Accepted",
+    "date_note": "论文接受",
+    "source_date": "2026-03-12",
+    "source": "Environmental Contaminants & Microbiology",
+    "title": "庄钧懿、姜瑞雪与刘易的潜流带氮循环综述获Water Research接受",
+    "summary": "该综述系统梳理河流潜流带的水文交换、氮转化及其与碳、铁、锰循环的耦合，讨论潜流带如何在氮源与氮汇之间转换，以及这些过程对水质管理和生态修复的意义。日期采用论文接受时间；推文发表于2026年3月12日。",
+    "url": "https://mp.weixin.qq.com/s/_Okw4ou9m07RlTSYfFb1Og",
+    "image": "/images/updates/2026-10-26/hyporheic-nitrogen-review.jpg",
+    "image_alt": "河流水位变化驱动潜流带氮源汇功能转换的示意图",
+    "image_fit": "contain",
+    "category": "research",
+    "title_en": "A systematic review of hyporheic nitrogen cycling is accepted by Water Research",
+    "summary_en": "Junyi ZHUANG, Ruixue JIANG and Yi LIU review how hydrological exchange, nitrogen transformations and coupled carbon–iron–manganese processes shape the hyporheic zone as a nitrogen source or sink, with implications for water quality and river restoration. Dated by acceptance; the linked feature appeared on 12 March 2026.",
+    "image_alt_en": "Conceptual illustration of hydrological changes and nitrogen source–sink functions in the hyporheic zone"
   },
   {
     "id": "news-10",

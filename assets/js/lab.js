@@ -28,7 +28,7 @@
         record.el.querySelectorAll('[data-lang-text]').forEach(el=>el.hidden=el.dataset.langText!==state.lang);
         record.el.querySelector('[data-news-link]').setAttribute('aria-labelledby',record.el.dataset.newsId+'-'+state.lang);
         record.el.querySelector('[data-card-category]').textContent=labels[state.lang][record.category]||labels[state.lang].community;
-        record.el.querySelector('[data-source-label]').textContent=zh?'在新标签页阅读原文':'Read the original article in a new tab';
+        record.el.querySelector('[data-source-label]').textContent=record.el.dataset.internalStory ? (zh?'阅读完整报道':'Read the full story') : (zh?'在新标签页阅读原文':'Read the original article in a new tab');
       });
       input.value=state.q;input.placeholder=zh?'搜索中文或英文新闻':'Search news in English or Chinese';input.setAttribute('aria-label',zh?'搜索新闻':'Search news');
       news.querySelector('[data-search-label]').textContent=zh?'搜索':'Search';

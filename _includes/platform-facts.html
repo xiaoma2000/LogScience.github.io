@@ -1,0 +1,1 @@
+{% if include.item.facts.size > 0 %}<dl class="platform-facts">{% for fact in include.item.facts %}<div><dt>{{ fact.label | escape }}</dt><dd>{{ fact.value | escape }}</dd></div>{% endfor %}</dl>{% endif %}

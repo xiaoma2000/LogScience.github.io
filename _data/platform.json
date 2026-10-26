@@ -1,0 +1,227 @@
+{
+  "intro": "Our field platforms connect coastal aquifers, riverbeds and the campus subsurface. Custom sampling and shared laboratory analysis link these observations with modelling and satellite data.",
+  "sections": [
+    {
+      "id": "field-stations",
+      "number": "01",
+      "layout": "stations",
+      "title": "Monitoring & modelling sites",
+      "description": "Three complementary settings for investigating groundwater exchange and subsurface processes.",
+      "items": [
+        {
+          "title": "Guanghai Bay sandy beach",
+          "location": "Taishan, Guangdong",
+          "image": "/images/platform/guanghai-beach.jpg",
+          "image_alt": "Groundwater field equipment and monitoring wells on the sandy beach at Guanghai Bay",
+          "summary": "An intertidal field site for studying tidal forcing, groundwater exchange and coastal biogeochemistry. Multi-level sampling supports observations of vertical groundwater chemistry and its changes through time.",
+          "caption": "Field monitoring at Guanghai Bay."
+        },
+        {
+          "title": "Huanghuadong River",
+          "location": "Taishan, Guangdong",
+          "image": "/images/platform/huanghuadong-well-network.png",
+          "image_alt": "Huanghuadong River topography and monitoring wells in the river channel and sandbar, with the sampling layout and legend",
+          "summary": "Monitoring wells in the river channel and adjacent sandbar provide depth-resolved observations of groundwater–river exchange. The site supports investigation of hyporheic flow paths and associated biogeochemical processes.",
+          "caption": "River-channel and sandbar monitoring layout."
+        },
+        {
+          "title": "Campus groundwater modelling system",
+          "location": "HKUST(GZ), Nansha",
+          "image": "/images/platform/campus-geologic-model.png",
+          "image_alt": "Three-dimensional geological model of the HKUST(GZ) campus with boreholes and aquifer-layer legend",
+          "summary": "Borehole and water-level records support a three-dimensional geological model and groundwater-flow modelling at HKUST(GZ). This work provides the foundation for campus hydrogeological assessment and development of a groundwater digital twin.",
+          "caption": "Campus geological model and subsurface layers."
+        }
+      ],
+      "source_note": "Site photographs and figures: LogScience Lab research presentations."
+    },
+    {
+      "id": "groundwater-sampler",
+      "number": "02",
+      "layout": "feature",
+      "title": "Groundwater sampling technology",
+      "description": "A group-developed system for repeated, depth-resolved groundwater sampling.",
+      "items": [
+        {
+          "title": "Multi-level groundwater sampling system",
+          "kicker": "Developed by Yi LIU and Cheng XING",
+          "image": "/images/platform/multi-level-sampler.png",
+          "image_alt": "Multi-level groundwater sampler showing the complete sampling tube and enlarged inlet, outlet and tubing-channel components",
+          "summary": "The modular system collects groundwater from multiple depths within a single PVC monitoring well. Separate sampling lines allow repeated observations at fixed levels, helping resolve vertical heterogeneity in groundwater chemistry.",
+          "paragraphs": [
+            "The design can be adapted to standard PVC casing sizes and has been used for high-resolution monitoring at Guanghai Bay. Repeated sampling supports comparisons across high and low tides, spring–neap cycles and wet and dry seasons."
+          ],
+          "facts": [
+            {
+              "label": "Configuration",
+              "value": "Multiple sampling levels in one borehole"
+            },
+            {
+              "label": "Adaptable PVC sizes",
+              "value": "50, 63, 75 and 90 mm outer diameter"
+            },
+            {
+              "label": "Application",
+              "value": "Depth profiles and repeated time-series sampling"
+            }
+          ],
+          "caption": "Prototype and schematic from Yi LIU and Cheng XING’s multi-level monitoring presentation."
+        }
+      ]
+    },
+    {
+      "id": "chemical-analysis",
+      "number": "03",
+      "layout": "analysis",
+      "title": "Chemical analysis & method development",
+      "description": "Shared analytical facilities support our measurements and the development of new laboratory methods.",
+      "facility": {
+        "name": "Earth and Environmental Systems Research Facility",
+        "summary": "Our group draws on EESRF, a shared research facility at HKUST(GZ), for field and laboratory analysis. Selected equipment supports water chemistry, isotope studies and gas measurements.",
+        "image": "/images/platform/eesrf-banner.png",
+        "image_alt": "HKUST(GZ) Earth and Environmental Systems Research Facility (EESRF)",
+        "url": "https://eesrf.hkust-gz.edu.cn/",
+        "equipment_url": "https://eesrf.hkust-gz.edu.cn/equipment-and-services/es-equipment/",
+        "instruments": [
+          {
+            "title": "CTD profiling & sampling",
+            "summary": "Water-column temperature, salinity and depth profiling with sampling.",
+            "image": "/images/platform/ctd-sampling-system.png",
+            "image_alt": "EESRF seawater CTD profiling and sampling system"
+          },
+          {
+            "title": "Water isotope analysis",
+            "summary": "Stable-isotope measurements of water.",
+            "image": "/images/platform/water-isotope-analyzer.png",
+            "image_alt": "EESRF Picarro water isotope analyzer"
+          },
+          {
+            "title": "TOC / TN analysis",
+            "summary": "Total organic carbon and total nitrogen in water samples.",
+            "image": "/images/platform/toc-tn-analyzer.png",
+            "image_alt": "EESRF total organic carbon and total nitrogen analyzer"
+          },
+          {
+            "title": "Radium isotope counting",
+            "summary": "Delayed-coincidence counting for radium isotope analysis.",
+            "image": "/images/platform/radium-counting-system.png",
+            "image_alt": "EESRF radium isotope delayed-coincidence counting system"
+          },
+          {
+            "title": "Headspace gas chromatography",
+            "summary": "Dual-channel gas chromatography with automated headspace sampling.",
+            "image": "/images/platform/headspace-gas-chromatograph.png",
+            "image_alt": "EESRF automated-headspace dual-channel gas chromatograph"
+          }
+        ]
+      },
+      "items": [
+        {
+          "title": "Measuring oxalate-extractable iron",
+          "kicker": "Published method · Yan ZHANG & Yi LIU",
+          "image": "/images/platform/iron-analysis-workflow.png",
+          "image_alt": "Published flowchart for sample analysis and calibration of the 1,10-phenanthroline method for oxalate-extractable iron",
+          "summary": "Oxalate can interfere with iron–1,10-phenanthroline complex formation. Yan ZHANG and Yi LIU developed a pH-adjustment approach that reduces this interference, enabling colorimetric measurement of oxalate-extractable iron for sediment and mineral studies.",
+          "facts": [
+            {
+              "label": "Target",
+              "value": "Oxalate-extractable iron"
+            },
+            {
+              "label": "Key adjustment",
+              "value": "pH 7–9"
+            },
+            {
+              "label": "Publication",
+              "value": "Applied Geochemistry 183 (2025), 106354"
+            }
+          ],
+          "caption": "Analytical workflow reproduced from Zhang & Liu (2025), Figure 2.",
+          "links": [
+            {
+              "label": "Read the method paper",
+              "url": "https://doi.org/10.1016/j.apgeochem.2025.106354"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "datasets",
+      "number": "04",
+      "layout": "datasets",
+      "title": "Earth-observation datasets",
+      "description": "Ongoing work on surface-water dynamics and aquatic reflectance in the Pearl River Basin.",
+      "compact": true,
+      "image": "/images/platform/hls-wf-preview.svg",
+      "image_alt": "HLS water-fraction example with twelve monthly maps, four derived surface-water metrics and a surface-water-regime map, retaining all original colour scales and legends",
+      "caption": "Example HLS-WF outputs: monthly water fraction and derived surface-water characteristics. Click to enlarge.",
+      "items": [
+        {
+          "title": "HLS-WF: monthly surface-water fraction",
+          "status": "in-development",
+          "status_label": "Ongoing",
+          "summary": "Developing monthly surface-water fraction data for the Pearl River Basin from HLS satellite imagery (2015–2025).",
+          "facts": [
+            {
+              "label": "Region",
+              "value": "Pearl River Basin, China"
+            },
+            {
+              "label": "Period",
+              "value": "2015–2025"
+            },
+            {
+              "label": "Temporal resolution",
+              "value": "Monthly"
+            },
+            {
+              "label": "Variable",
+              "value": "Surface-water fraction"
+            },
+            {
+              "label": "Source imagery",
+              "value": "Harmonized Landsat–Sentinel-2 (HLS)"
+            }
+          ],
+          "availability_note": "Release in preparation. No public download is available yet."
+        },
+        {
+          "title": "Sentinel-2 aquatic reflectance (Rrs)",
+          "status": "planned",
+          "status_label": "Ongoing",
+          "summary": "Planning a Pearl River Basin water-colour dataset using Sentinel-2 imagery and ACOLITE atmospheric correction.",
+          "facts": [
+            {
+              "label": "Region",
+              "value": "Pearl River Basin, China"
+            },
+            {
+              "label": "Sensor",
+              "value": "Sentinel-2 MSI"
+            },
+            {
+              "label": "Processing approach",
+              "value": "ACOLITE aquatic atmospheric correction"
+            },
+            {
+              "label": "Variable",
+              "value": "Remote-sensing reflectance (Rrs)"
+            }
+          ],
+          "availability_note": "Planned work; the dataset has not been produced or released.",
+          "links": [
+            {
+              "label": "Methodological reference: Ducar et al. (2026)",
+              "url": "https://doi.org/10.1002/lol2.70112"
+            },
+            {
+              "label": "About ACOLITE",
+              "url": "https://github.com/acolite/acolite"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

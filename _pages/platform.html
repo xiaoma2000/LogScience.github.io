@@ -1,0 +1,31 @@
+---
+layout: lab
+title: "Platform"
+section: platform
+permalink: /platform/
+sitemap: true
+hide_description: true
+description: "Field infrastructure, groundwater sampling, chemical analysis and forthcoming Earth-observation datasets."
+---
+<div class="shell page-content platform-page">
+  <p class="platform-intro">{{ site.data.platform.intro | escape }}</p>
+  <nav class="platform-index" aria-label="Platform resources">{% for section in site.data.platform.sections %}<a href="#{{ section.id }}"><span>{{ section.number }}</span>{{ section.title | escape }} <span aria-hidden="true">↓</span></a>{% endfor %}</nav>
+  {% for section in site.data.platform.sections %}
+  <section class="platform-block platform-block--{{ section.layout | default: 'feature' }}" id="{{ section.id }}" aria-labelledby="{{ section.id }}-title">
+    <div class="platform-block-heading"><span class="platform-section-number" aria-hidden="true">{{ section.number }}</span><div><h2 id="{{ section.id }}-title">{{ section.title | escape }}</h2><p>{{ section.description | escape }}</p></div></div>
+
+    {% if section.facility %}{% assign facility = section.facility %}
+    <div class="facility-intro"><div><a class="facility-banner" href="{{ facility.url | escape }}" target="_blank" rel="noopener noreferrer">{% include lab-image.html src=facility.image alt=facility.image_alt %}</a></div><div><p>{{ facility.summary | escape }}</p><div class="platform-links"><a class="text-link" href="{{ facility.url | escape }}" target="_blank" rel="noopener noreferrer">About EESRF ↗</a><a class="text-link" href="{{ facility.equipment_url | escape }}" target="_blank" rel="noopener noreferrer">Facility equipment & services ↗</a></div></div></div>
+    <div class="instrument-grid" aria-label="Selected EESRF equipment">{% for instrument in facility.instruments %}<article class="instrument-card">{% include lab-image.html src=instrument.image alt=instrument.image_alt %}<div><h3>{{ instrument.title | escape }}</h3><p>{{ instrument.summary | escape }}</p></div></article>{% endfor %}</div>
+    <p class="platform-source-note">Equipment photographs and listings: <a href="{{ facility.equipment_url | escape }}" target="_blank" rel="noopener noreferrer">EESRF, HKUST(GZ)</a>.</p>
+    {% endif %}
+
+    {% if section.items.size > 0 %}
+      {% if section.layout == 'stations' %}<div class="station-grid">{% for item in section.items %}<article class="station-card">{% include platform-figure.html item=item %}<div class="station-copy"><p class="station-location">{{ item.location | escape }}</p><h3>{{ item.title | escape }}</h3><p>{{ item.summary | escape }}</p>{% include platform-links.html item=item %}</div></article>{% endfor %}</div>
+      {% elsif section.layout == 'datasets' %}<div class="dataset-grid{% if section.compact %} dataset-grid--compact{% endif %}">{% for item in section.items %}<article class="dataset-card" data-dataset-status="{{ item.status | escape }}"><span class="dataset-status">{% if item.status_label %}{{ item.status_label | escape }}{% else %}{{ item.status | replace: '-', ' ' | capitalize }}{% endif %}</span><h3>{{ item.title | escape }}</h3><p>{{ item.summary | escape }}</p>{% unless section.compact %}{% include platform-facts.html item=item %}<div class="dataset-notes"><p class="dataset-availability">{{ item.availability_note | escape }}</p>{% if item.status == 'released' and item.download_url %}<a class="button" href="{{ item.download_url | escape }}" target="_blank" rel="noopener noreferrer">Download dataset ↗</a>{% endif %}{% include platform-links.html item=item %}</div>{% endunless %}</article>{% endfor %}</div>
+      {% if section.image %}<div class="dataset-preview">{% include platform-figure.html item=section %}</div>{% endif %}
+      {% else %}{% for item in section.items %}<article class="platform-feature{% if section.layout == 'analysis' %} platform-feature--method{% endif %}">{% include platform-figure.html item=item %}<div class="platform-feature-copy">{% if item.kicker %}<p class="eyebrow">{{ item.kicker | escape }}</p>{% endif %}<h3>{{ item.title | escape }}</h3><p>{{ item.summary | escape }}</p>{% for paragraph in item.paragraphs %}<p>{{ paragraph | escape }}</p>{% endfor %}{% include platform-facts.html item=item %}{% include platform-links.html item=item %}</div></article>{% endfor %}{% endif %}
+    {% else %}<p class="platform-empty">{{ section.empty | escape }}</p>{% endif %}
+    {% if section.source_note %}<p class="platform-source-note">{{ section.source_note | escape }}</p>{% endif %}
+  </section>{% endfor %}
+</div>

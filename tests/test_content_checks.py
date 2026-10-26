@@ -9,7 +9,7 @@ import unittest
 
 
 CHECKER = Path(__file__).resolve().parents[1] / "tools" / "check_content.py"
-ROUTES = ("", "research", "team", "publications", "news", "contact")
+ROUTES = ("", "research", "team", "publications", "platform", "news", "contact")
 
 
 class ContentChecksTest(unittest.TestCase):
@@ -84,6 +84,87 @@ class ContentChecksTest(unittest.TestCase):
         result = self.run_check()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("PASS", result.stdout)
+
+    def test_alumni_can_record_confirmed_period_and_destination_before_role_is_known(self):
+        self.data["team"]["alumni"] = [{"name": "Former Person", "period": "Summer 2025",
+                                          "destination": "MPhil, Example University"}]
+        result = self.run_check()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_alumni_destination_must_be_text_when_provided(self):
+        self.data["team"]["alumni"][0]["destination"] = {"unknown": True}
+        self.assert_fails("destination")
+
+    def test_local_news_story_requires_an_existing_matching_permalink(self):
+        self.data["news"][0].update(url="/news/milestone/", link_type="internal")
+        page = self.root / "_pages" / "milestone.md"
+        page.parent.mkdir()
+        page.write_text('---\nlayout: lab\npermalink: /news/milestone/\n---\nA real story.', encoding="utf-8")
+        result = self.run_check()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        page.write_text('---\npermalink: /news/other/\n---\n', encoding="utf-8")
+        self.assert_fails("missing local news page")
+
+    def test_internal_news_rejects_network_and_escaping_paths(self):
+        self.data["news"][0]["link_type"] = "internal"
+        for bad in ("//outside.example/news/", "/news/../../secret/", "/news/%2e%2e/private/", "https://outside.example/"):
+            with self.subTest(url=bad):
+                self.data["news"][0]["url"] = bad
+                self.assert_fails("local news URL")
+
+    def test_carousel_gallery_checks_each_photo_and_alt(self):
+        self.data["news"][0]["gallery"] = [
+            {"image": "/images/sample.svg", "image_alt": "Student one", "caption": "First defense"},
+            {"image": "/images/absent.jpg", "image_alt": "Student two", "caption": "Second defense"}]
+        self.assert_fails("missing local image")
+        self.data["news"][0]["gallery"][1] = {"image": "/images/sample.svg", "caption": "Second defense"}
+        self.assert_fails("image_alt")
+
+    def test_home_carousel_checks_gallery_images(self):
+        self.data["home"]["gallery"] = [{"image": "/images/absent.jpg", "image_alt": "Team", "caption": "In the field"}]
+        self.assert_fails("missing local image")
+
+    def test_empty_platform_is_allowed_but_invalid_resource_link_is_rejected(self):
+        self.data["platform"] = {"intro": "Resources", "sections": [{"id": "tools", "title": "Tools", "description": "Methods", "empty": "To be added", "items": []}]}
+        result = self.run_check()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.data["platform"]["sections"][0]["items"] = [{"title": "Method", "summary": "Details", "url": "javascript:alert(1)"}]
+        self.assert_fails("absolute HTTP(S)")
+
+    def platform_fixture(self, item):
+        self.data["platform"] = {"intro": "Resources", "sections": [{"id": "datasets", "title": "Datasets", "description": "Forthcoming data", "empty": "To be added", "items": [item]}]}
+
+    def test_unreleased_dataset_cannot_offer_a_download(self):
+        self.platform_fixture({"title": "PRB reflectance", "summary": "Planned", "status": "planned", "download_url": "https://example.org/data.zip"})
+        self.assert_fails("unreleased dataset")
+        self.data["platform"]["sections"][0]["items"][0]["status"] = "in-development"
+        self.assert_fails("unreleased dataset")
+
+    def test_released_dataset_accepts_valid_download_but_rejects_unknown_status(self):
+        self.platform_fixture({"title": "PRB reflectance", "summary": "Released", "status": "released", "download_url": "https://example.org/data.zip"})
+        result = self.run_check()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.data["platform"]["sections"][0]["items"][0]["status"] = "coming-soon-maybe"
+        self.assert_fails("dataset status")
+
+    def test_platform_metadata_and_reference_links_are_validated(self):
+        self.platform_fixture({"title": "Water fraction", "summary": "Monthly water", "facts": [{"label": "Period"}], "links": [{"label": "Reference", "url": "javascript:alert(1)"}]})
+        self.assert_fails(".facts[0].value")
+        self.assert_fails("absolute HTTP(S)")
+
+    def test_shared_facility_instrument_photos_are_validated(self):
+        self.platform_fixture({"title": "Fe method", "summary": "Method"})
+        self.data["platform"]["sections"][0]["facility"] = {"name": "EESRF", "summary": "Shared facility", "url": "https://example.org/", "equipment_url": "https://example.org/equipment/", "instruments": [{"title": "TOC/TN analyzer", "summary": "Carbon and nitrogen", "image": "/images/missing.jpg", "image_alt": "Analyzer"}]}
+        self.assert_fails("missing local image")
+
+    def test_graduate_profiles_check_images_dates_and_committees(self):
+        student = {"name": "A Person", "title": "Aquatic carbon", "paragraph": "A defense", "date": "2026-07-24", "time": "09:00", "venue": "E3-202", "image": "/images/absent.jpg", "image_alt": "Defense photo", "committee": []}
+        self.data["milestones"] = {"mphil_2026": {"intro": "Graduation", "students": [student]}}
+        self.assert_fails("missing local image")
+        student.update(image="/images/sample.svg", date="2026-02-30")
+        self.assert_fails("real ISO date")
+        student.update(date="2026-07-24")
+        self.assert_fails("committee")
 
     def test_duplicate_news_ids_and_urls_are_reported(self):
         self.data["news"].append(dict(self.data["news"][0]))
@@ -284,6 +365,15 @@ class ContentChecksTest(unittest.TestCase):
     def test_project_role_must_preserve_pi_co_pi_co_i(self):
         self.data["research"]["projects"][0]["role"] = "Lead"
         self.assert_fails("PI, Co-PI or Co-I")
+
+    def test_undergraduate_programs_preserve_their_individual_years(self):
+        self.data["research"]["undergraduate_projects"] = [
+            {"funder": "X-Program", "year": 2025, "role": "PI", "titles": ["Project one", "Project two", "Project three"]},
+            {"funder": "UBRTP", "year": 2024, "role": "PI", "status": "Completed", "titles": ["Terrestrial contaminant loading"]}]
+        result = self.run_check()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.data["research"]["undergraduate_projects"][1]["year"] = "unknown"
+        self.assert_fails(".year")
 
     def test_home_featured_paper_must_exist(self):
         self.data["home"]["featured_papers"] = ["missing-paper"]

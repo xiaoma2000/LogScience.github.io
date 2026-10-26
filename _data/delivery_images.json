@@ -35,11 +35,11 @@
     "bytes": 65988
   },
   "/images/group2.png": {
-    "src": "/images/site/group2-5785a4c338.webp",
+    "src": "/images/site/group2-fe6da7814c.webp",
     "width": 1397,
     "height": 849,
     "source_bytes": 1631515,
-    "bytes": 115260
+    "bytes": 137766
   },
   "/images/hongkai3.png": {
     "src": "/images/site/hongkai3-cfd0588a13.webp",
@@ -223,6 +223,83 @@
     "source_bytes": 119018,
     "bytes": 77966
   },
+  "/images/platform/campus-geologic-model.png": {
+    "src": "/images/site/campus-geologic-model-c3b94231fb.webp",
+    "width": 925,
+    "height": 480,
+    "source_bytes": 198460,
+    "bytes": 116352
+  },
+  "/images/platform/ctd-sampling-system.png": {
+    "src": "/images/site/ctd-sampling-system-bcec922852.webp",
+    "width": 762,
+    "height": 818,
+    "source_bytes": 784590,
+    "bytes": 118404
+  },
+  "/images/platform/eesrf-banner.png": {
+    "src": "/images/site/eesrf-banner-dae5a5db79.webp",
+    "width": 559,
+    "height": 99,
+    "source_bytes": 77722,
+    "bytes": 14844
+  },
+  "/images/platform/guanghai-beach.jpg": {
+    "src": "/images/site/guanghai-beach-4f1cbf336b.webp",
+    "width": 704,
+    "height": 459,
+    "source_bytes": 56181,
+    "bytes": 77514
+  },
+  "/images/platform/headspace-gas-chromatograph.png": {
+    "src": "/images/site/headspace-gas-chromatograph-273dd1a68d.webp",
+    "width": 762,
+    "height": 508,
+    "source_bytes": 284073,
+    "bytes": 31048
+  },
+  "/images/platform/huanghuadong-well-network.png": {
+    "src": "/images/site/huanghuadong-well-network-189edb8da9.webp",
+    "width": 870,
+    "height": 777,
+    "source_bytes": 500873,
+    "bytes": 100186
+  },
+  "/images/platform/iron-analysis-workflow.png": {
+    "src": "/images/site/iron-analysis-workflow-e0c6f7d4ec.webp",
+    "width": 725,
+    "height": 316,
+    "source_bytes": 76186,
+    "bytes": 20134
+  },
+  "/images/platform/multi-level-sampler.png": {
+    "src": "/images/site/multi-level-sampler-80062f2b71.webp",
+    "width": 940,
+    "height": 744,
+    "source_bytes": 339947,
+    "bytes": 83044
+  },
+  "/images/platform/radium-counting-system.png": {
+    "src": "/images/site/radium-counting-system-97a7e3fce3.webp",
+    "width": 762,
+    "height": 508,
+    "source_bytes": 419396,
+    "bytes": 65860
+  },
+  "/images/platform/toc-tn-analyzer.png": {
+    "src": "/images/site/toc-tn-analyzer-3a5f506cb9.webp",
+    "width": 762,
+    "height": 508,
+    "source_bytes": 291979,
+    "bytes": 32962
+  },
+  "/images/platform/water-isotope-analyzer.png": {
+    "src": "/images/site/water-isotope-analyzer-31f6c8aa37.webp",
+    "width": 762,
+    "height": 762,
+    "source_bytes": 472833,
+    "bytes": 54286
+  },
   "/images/prb_ch4.png": {
     "src": "/images/site/prb_ch4-ad02800d13.webp",
     "width": 1136,
@@ -292,6 +369,76 @@
     "height": 727,
     "source_bytes": 2530976,
     "bytes": 156082
+  },
+  "/images/updates/2026-10-26/academic-exchange.jpg": {
+    "src": "/images/site/academic-exchange-627ac6e05d.webp",
+    "width": 1800,
+    "height": 1201,
+    "source_bytes": 500056,
+    "bytes": 225844
+  },
+  "/images/updates/2026-10-26/doctoral-graduation.jpg": {
+    "src": "/images/site/doctoral-graduation-5c6b7db2b3.webp",
+    "width": 1800,
+    "height": 1199,
+    "source_bytes": 320942,
+    "bytes": 151288
+  },
+  "/images/updates/2026-10-26/eoas-salon-awards.jpg": {
+    "src": "/images/site/eoas-salon-awards-403a69a650.webp",
+    "width": 800,
+    "height": 533,
+    "source_bytes": 119181,
+    "bytes": 57780
+  },
+  "/images/updates/2026-10-26/field-team-july-17.jpg": {
+    "src": "/images/site/field-team-july-17-20723f52c5.webp",
+    "width": 1800,
+    "height": 1350,
+    "source_bytes": 1057148,
+    "bytes": 686666
+  },
+  "/images/updates/2026-10-26/field-team-july-28.jpg": {
+    "src": "/images/site/field-team-july-28-6a23c63f09.webp",
+    "width": 1800,
+    "height": 1350,
+    "source_bytes": 675176,
+    "bytes": 378624
+  },
+  "/images/updates/2026-10-26/graduation-group.jpg": {
+    "src": "/images/site/graduation-group-244e2eb088.webp",
+    "width": 1279,
+    "height": 1706,
+    "source_bytes": 167614,
+    "bytes": 78712
+  },
+  "/images/updates/2026-10-26/hyporheic-nitrogen-review.jpg": {
+    "src": "/images/site/hyporheic-nitrogen-review-9dfb9c0f0b.webp",
+    "width": 800,
+    "height": 543,
+    "source_bytes": 100022,
+    "bytes": 48224
+  },
+  "/images/updates/2026-10-26/logscience-logo.png": {
+    "src": "/images/site/logscience-logo-10c54884dc.webp",
+    "width": 1000,
+    "height": 530,
+    "source_bytes": 990037,
+    "bytes": 52962
+  },
+  "/images/updates/2026-10-26/xinke-defense.jpg": {
+    "src": "/images/site/xinke-defense-a410e3ade0.webp",
+    "width": 1800,
+    "height": 1200,
+    "source_bytes": 351698,
+    "bytes": 155106
+  },
+  "/images/updates/2026-10-26/yuke-defense.jpg": {
+    "src": "/images/site/yuke-defense-606bd06ce0.webp",
+    "width": 1800,
+    "height": 1200,
+    "source_bytes": 493992,
+    "bytes": 301002
   },
   "/images/xingcheng.png": {
     "src": "/images/site/xingcheng-fe7f5fb4d1.webp",

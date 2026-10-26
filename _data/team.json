@@ -103,28 +103,30 @@
         {
           "id": "huan-wang",
           "name": "Huan WANG",
-          "entry": "2024-now",
-          "entry_type": "PhD student since 2024",
+          "entry": "2022-now",
+          "entry_type": "Joined as an MPhil student in Fall 2022; continued as a PhD student after graduation",
           "image": "/images/HuanWANG.png",
           "image_position": "48% 40%",
           "interests": [
             "Distribution and migration of microplastics in watersheds",
             "Microplastic transport from rivers to the ocean"
           ],
-          "email": "hwang888@connect.hkust-gz.edu.cn"
+          "email": "hwang888@connect.hkust-gz.edu.cn",
+          "note": "Joined as an MPhil student in Fall 2022; continued as a PhD student after graduation."
         },
         {
           "id": "huanglin-luo",
           "name": "Huanglin LUO",
-          "entry": "2025-now",
-          "entry_type": "PhD student since 2025",
+          "entry": "2024-now",
+          "entry_type": "Joined as a visiting research student in Fall 2024; continued as a PhD student from Fall 2025",
           "image": "/images/huanglinluo.png",
           "image_position": "43% 40%",
           "interests": [
             "Deep learning in hydrological modeling",
             "Remote sensing with Google Earth Engine"
           ],
-          "email": "hluo435@connect.hkust-gz.edu.cn"
+          "email": "hluo435@connect.hkust-gz.edu.cn",
+          "note": "Joined as a visiting research student in Fall 2024; continued as a PhD student from Fall 2025."
         }
       ]
     },
@@ -153,27 +155,66 @@
     {
       "name": "Yuke LI",
       "role": "MPhil, HKUST(GZ)",
-      "period": "Fall 2024–Fall 2026"
-    },
-    {
-      "name": "Zhiyun DENG",
-      "role": "Research Assistant",
-      "period": "Jan 2025–Apr 2025"
-    },
-    {
-      "name": "Shuoyu ZHANG",
-      "role": "Research Assistant",
-      "period": "Jul 2024–Feb 2025"
-    },
-    {
-      "name": "Haoran WANG",
-      "role": "Research Assistant",
-      "period": "Summer 2023–Summer 2026"
+      "period": "Fall 2024",
+      "sort_order": 10,
+      "destination": "The Bridge Program, HKUST(GZ)"
     },
     {
       "name": "Ruixue JIANG",
       "role": "Research Assistant",
-      "period": "Fall 2025–Fall 2026"
+      "period": "Fall 2025–Fall 2026",
+      "sort_order": 9,
+      "destination": "PhD Student, The University of Manchester"
+    },
+    {
+      "name": "Haoran WANG",
+      "role": "Research Assistant",
+      "period": "Summer 2023–Summer 2026",
+      "sort_order": 8
+    },
+    {
+      "name": "Beilin TAN",
+      "role": "Undergraduate, HKUST(GZ) X-Program",
+      "period": "Fall 2025",
+      "sort_order": 7
+    },
+    {
+      "name": "Feiyang YANG",
+      "role": "Undergraduate, HKUST(GZ) X-Program",
+      "period": "Fall 2025",
+      "sort_order": 6
+    },
+    {
+      "name": "Tiantian ZHU",
+      "role": "Undergraduate, HKUST(GZ) X-Program",
+      "period": "Fall 2025",
+      "sort_order": 5
+    },
+    {
+      "name": "Junkai LING",
+      "role": "Research Assistant",
+      "period": "Summer 2025",
+      "sort_order": 4,
+      "destination": "MPhil, HKUST(GZ)"
+    },
+    {
+      "name": "Zhiyun DENG",
+      "role": "Research Assistant",
+      "period": "Jan 2025–Apr 2025",
+      "sort_order": 3
+    },
+    {
+      "name": "Shuoyu ZHANG",
+      "role": "Research Assistant",
+      "period": "Jul 2024–Feb 2025",
+      "sort_order": 2,
+      "destination": "Research Assistant, HKUST"
+    },
+    {
+      "name": "Weifeng CHEN",
+      "role": "Undergraduate, HKUST(GZ) X-Program",
+      "period": "Summer 2023",
+      "sort_order": 1
     }
   ]
 }

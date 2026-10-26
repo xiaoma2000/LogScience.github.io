@@ -1,0 +1,9 @@
+{
+  "title": "REPLACE with the planned dataset name",
+  "status": "planned",
+  "summary": "REPLACE with confirmed scope and intended variables; use future tense for work not yet performed",
+  "facts": [
+    {"label": "Region", "value": "REPLACE with confirmed coverage"}
+  ],
+  "availability_note": "Planned work; not yet publicly released."
+}

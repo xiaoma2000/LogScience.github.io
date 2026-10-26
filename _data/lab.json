@@ -22,7 +22,7 @@
     "lede": "We investigate how water movement and geology shape carbon, nitrogen and contaminant cycles across connected landscapes."
   },
   "assets": {
-    "hero": "/images/group2.png",
+    "hero": "/images/updates/2026-10-26/field-team-july-28.jpg",
     "group": "/images/group2.png",
     "field": "/images/field_trip_hongkai.png",
     "pi": "/images/liuyi_website.png"
@@ -50,5 +50,9 @@
       "image_alt": "HKUST / Earth-HK logo",
       "url": "https://earthhk.hkust.edu.hk/"
     }
-  ]
+  ],
+  "logo": {
+    "image": "/images/updates/2026-10-26/logscience-logo.png",
+    "image_alt": "LogScience Lab — Land-Ocean-Groundwater Science"
+  }
 }

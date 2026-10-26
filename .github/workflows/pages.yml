@@ -27,7 +27,7 @@ jobs:
       - name: Check source content and behavior
         run: |
           python3 -m unittest discover -s tests -q
-          node --test tests/test_lab_state.cjs
+          node --test tests/*.cjs
           python3 tools/check_content.py
       - name: Configure this build for its Pages address
         env:

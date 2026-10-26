@@ -79,7 +79,10 @@ async function sourceList() {
     ['lab.json', 1000, 95],
     ['team.json', 640, 82],
     ['news.json', 800, 82],
-    ['research.json', 1280, 90]
+    ['research.json', 1280, 90],
+    ['home.json', 1800, 86],
+    ['milestones.json', 1800, 88],
+    ['platform.json', 1600, 90]
   ]) visit(await readJson(path.join(ROOT, '_data', file)), maxEdge, quality);
 
   // Shared photographs and legacy research figures remain useful to templates.

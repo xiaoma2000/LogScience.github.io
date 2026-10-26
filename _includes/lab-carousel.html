@@ -1,0 +1,17 @@
+<div class="photo-carousel photo-carousel--{{ include.variant | default: 'home' }}" data-carousel data-interval="{{ include.interval | default: 6500 }}" data-autoplay="{{ include.autoplay | default: false }}" role="region" aria-roledescription="carousel" aria-label="{{ include.label | escape }}">
+  <div class="carousel-viewport">
+    {% for photo in include.photos %}<figure class="carousel-slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ include.photos.size }}">
+      {% if include.href %}<a class="carousel-photo-link" href="{{ include.href }}"{% if include.external %} target="_blank" rel="noopener noreferrer"{% endif %} tabindex="-1">{% endif %}
+      {% assign photo_loading = 'lazy' %}{% if forloop.first and include.variant == 'home' %}{% assign photo_loading = 'eager' %}{% endif %}
+      {% include lab-image.html src=photo.image alt=photo.image_alt loading=photo_loading %}
+      {% if include.href %}</a>{% endif %}
+      {% unless include.captions == false %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endunless %}
+    </figure>{% endfor %}
+  </div>
+  {% if include.controls == 'dots' %}<div class="carousel-controls carousel-controls--dots" data-carousel-controls role="group" aria-label="Choose a photo" hidden>
+    {% for photo in include.photos %}<button type="button" data-carousel-dot="{{ forloop.index0 }}" aria-label="Show photo {{ forloop.index }} of {{ include.photos.size }}" aria-pressed="{{ forloop.first }}"><span aria-hidden="true"></span></button>{% endfor %}
+  </div>{% else %}<div class="carousel-controls" data-carousel-controls hidden>
+    <div class="carousel-navigation"><button type="button" data-carousel-prev aria-label="Previous photo">←</button><span data-carousel-count>1 / {{ include.photos.size }}</span><button type="button" data-carousel-next aria-label="Next photo">→</button></div>
+    <button class="carousel-toggle" type="button" data-carousel-toggle aria-label="Pause slideshow">Pause</button>
+  </div>{% endif %}
+</div>
