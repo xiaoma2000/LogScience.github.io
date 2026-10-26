@@ -237,12 +237,12 @@
     "source_bytes": 784590,
     "bytes": 118404
   },
-  "/images/platform/eesrf-banner.png": {
-    "src": "/images/site/eesrf-banner-dae5a5db79.webp",
-    "width": 559,
-    "height": 99,
-    "source_bytes": 77722,
-    "bytes": 14844
+  "/images/platform/eesrf-logo2.png": {
+    "src": "/images/site/eesrf-logo2-4e345368fd.webp",
+    "width": 1600,
+    "height": 470,
+    "source_bytes": 107871,
+    "bytes": 125036
   },
   "/images/platform/guanghai-beach.jpg": {
     "src": "/images/site/guanghai-beach-4f1cbf336b.webp",
@@ -419,12 +419,12 @@
     "source_bytes": 100022,
     "bytes": 48224
   },
-  "/images/updates/2026-10-26/logscience-logo2.png": {
-    "src": "/images/site/logscience-logo2-a233dce214.webp",
+  "/images/updates/2026-10-26/logscience-logo4.png": {
+    "src": "/images/site/logscience-logo4-bce3358a22.webp",
     "width": 1000,
-    "height": 333,
-    "source_bytes": 786562,
-    "bytes": 25552
+    "height": 192,
+    "source_bytes": 323973,
+    "bytes": 47782
   },
   "/images/updates/2026-10-26/xinke-defense.jpg": {
     "src": "/images/site/xinke-defense-a410e3ade0.webp",

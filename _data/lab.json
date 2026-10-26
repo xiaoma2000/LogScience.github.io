@@ -18,7 +18,8 @@
   "office": "E1 L6 601",
   "homepage": {
     "eyebrow": "Hydrogeology · Biogeochemistry",
-    "title": "Groundwater science, from river basins to the coast.",
+    "title": "Land-Ocean-Groundwater",
+    "subtitle": "Water Science from river basin to coast.",
     "lede": "We investigate how water movement and geology shape carbon, nitrogen and contaminant cycles across connected landscapes."
   },
   "assets": {
@@ -52,7 +53,7 @@
     }
   ],
   "logo": {
-    "image": "/images/updates/2026-10-26/logscience-logo2.png",
+    "image": "/images/updates/2026-10-26/logscience-logo4.png",
     "image_alt": "LogScience Lab — Land-Ocean-Groundwater Science"
   }
 }

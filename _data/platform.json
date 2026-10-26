@@ -78,8 +78,8 @@
       "facility": {
         "name": "Earth and Environmental Systems Research Facility",
         "summary": "Our group draws on EESRF, a shared research facility at HKUST(GZ), for field and laboratory analysis. Selected equipment supports water chemistry, isotope studies and gas measurements.",
-        "image": "/images/platform/eesrf-banner.png",
-        "image_alt": "HKUST(GZ) Earth and Environmental Systems Research Facility (EESRF)",
+        "image": "/images/platform/eesrf-logo2.png",
+        "image_alt": "Earth and Environmental Systems Research Facility (EESRF) logo",
         "url": "https://eesrf.hkust-gz.edu.cn/",
         "equipment_url": "https://eesrf.hkust-gz.edu.cn/equipment-and-services/es-equipment/",
         "instruments": [
