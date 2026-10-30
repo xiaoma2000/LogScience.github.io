@@ -60,7 +60,7 @@ Alumni按离组或项目结束时期倒序。`sort_order`是由编辑指定的�
 
 最新确认：Huan WANG在Fall2022以MPhil加入，毕业后继续读PhD，entry为2022-now，不能再用PhD阶段年份覆盖最早入组年，也不猜转博年份。Huanglin LUO在Fall2024以visiting research student加入、Fall2025开始PhD，entry为2024-now。Yuke LI的Alumni显示仅Fall2024入学学期，用户明确不显示其毕业年；毕业新闻保留真实2026经历。
 
-本科项目 `research.undergraduate_projects` 现在为项目组数组，每组独立保存funder/year/role/titles，可选status。当前2025 X-Program三项、2024 UBRTP一项，合计四项；2024项目标Completed，不把它放在2025标题下。UBRTP为“Terrestrial contaminant loading to South China Sea via Pearl River discharge”，PI，用户来源记30k RMB/finished；资助额留在上下文记录，网站与其他项目一致不显示金额。Research support保留栏目标题，但不再显示原support_note说明。
+本科项目 `research.undergraduate_projects` 现在为项目组数组，每组独立保存funder/year/role/titles，可选status。当前2025 X-Program三项、2024 UBRTP一项，合计四项；2024项目完成状态保留在数据中，按2026-10-30用户要求不在页面标题显示Completed，不把它放在2025标题下。UBRTP为“Terrestrial contaminant loading to South China Sea via Pearl River discharge”，PI，用户来源记30k RMB/finished；资助额留在上下文记录，网站与其他项目一致不显示金额。Research support保留栏目标题，但不再显示原support_note说明。
 
 论文 `year` 控制展示分组，`online_year` 可记录与卷期年不同的首次在线年份；遵循项目已确认的年份规则。DOI 使用 `10.…/…` 原始格式，链接使用对应 `https://doi.org/…`。`is_pi` 和 `corresponding` 是 JSON 布尔值 `true`/`false`。`order` 是排序整数，允许 `0` 或负数，不是论文 ID，也不必等于 CV 编号。
 

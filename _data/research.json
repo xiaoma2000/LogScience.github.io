@@ -75,7 +75,7 @@
       "question": "How can continuous satellite observations reveal the timing and extent of changes in inland water coverage?", "stage": "Ongoing research",
       "paragraphs": ["Huanglin LUO is developing an approach that combines Harmonized Landsat–Sentinel-2 observations with deep learning to reconstruct monthly, sub-pixel water fraction at 30 m resolution. The aim is to capture gradual changes in water coverage as well as the timing of expansion and contraction.", "The research links water-fraction time series with water-body inventories to characterize persistence, seasonality and transitions in rivers, reservoirs and small water bodies. The Greater Bay Area provides the initial study setting."],
       "people": [{"id": "huanglin-luo", "name": "Huanglin LUO"}],
-      "keywords": ["Harmonized Landsat–Sentinel-2", "Deep learning", "Water surface phenology"],
+      "keywords": ["Harmonized Landsat–Sentinel-2", "Time-series Reconstruction", "Surface-water Dynamic Regimes"],
       "image": "/images/research/gba-surface-water-regimes.png", "image_alt": "Map of persistent water, seasonal drawdown and highly dynamic transition across the Greater Bay Area study domain", "image_width": 6732, "image_height": 4996, "expand_image": true,
       "caption": "Surface-water dynamic regimes across the Greater Bay Area study domain. Ongoing research by Huanglin LUO.", "paper_ids": [],
       "resource": {"label": "Data resource: NASA Harmonized Landsat–Sentinel-2", "url": "https://hls.gsfc.nasa.gov/products-description/"}

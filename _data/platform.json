@@ -32,8 +32,7 @@
           "summary": "Borehole and water-level records support a three-dimensional geological model and groundwater-flow modelling at HKUST(GZ). This work provides the foundation for campus hydrogeological assessment and development of a groundwater digital twin.",
           "caption": "Campus geological model and subsurface layers."
         }
-      ],
-      "source_note": "Site photographs and figures: LogScience Lab research presentations."
+      ]
     },
     {
       "id": "groundwater-sampler",
@@ -154,8 +153,7 @@
       "description": "Ongoing work on surface-water dynamics and aquatic reflectance in the Pearl River Basin.",
       "compact": true,
       "image": "/images/platform/hls-wf-preview.svg",
-      "image_alt": "HLS water-fraction example with twelve monthly maps, four derived surface-water metrics and a surface-water-regime map, retaining all original colour scales and legends",
-      "caption": "Example HLS-WF outputs: monthly water fraction and derived surface-water characteristics. Click to enlarge.",
+      "image_alt": "HLS water-fraction example with twelve monthly maps on the left and a surface-water-regime map on the right, retaining the original colour scale and complete legend",
       "items": [
         {
           "title": "HLS-WF: monthly surface-water fraction",

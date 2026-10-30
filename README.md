@@ -1,6 +1,6 @@
 # LogScience Lab website
 
-Land-Ocean-Groundwater Science group at HKUST(GZ). Current version: **2.0**, confirmed on 2026-10-26 and recorded by Git tag **v2.0**. See [the changelog](CHANGELOG.md). Production website deployment is managed separately.
+Land-Ocean-Groundwater Science group at HKUST(GZ). Current version: **2.3**, confirmed on 2026-10-30 and recorded by Git tag **v2.3**. See [the changelog](CHANGELOG.md). Production website deployment is managed separately.
 
 ## Local preview
 
@@ -24,7 +24,7 @@ Wait for the build to complete. A new environment can build the image with docke
 
 Read [the Chinese content guide](CONTENT_GUIDE.zh-CN.md) for JSON fields, image delivery, input templates and checks. Edit sources, never _site. Workspace context and provenance live outside this repository in 01_project_context and 02_content_materials.
 
-Six core pages use _layouts/lab.html, assets/css/lab.css and minimal local JavaScript. Original images and legacy source pages remain recoverable. Research/Team/Publications share stable IDs. News links to original articles; current recruitment is separate and appears on Contact.
+Seven core pages use _layouts/lab.html, assets/css/lab.css and minimal local JavaScript. Original images and legacy source pages remain recoverable. Research/Team/Publications share stable IDs. News links to original articles and the local MPhil graduation story; current recruitment is separate and appears on Contact.
 
 ## Publishing
 
