@@ -1,0 +1,41 @@
+{
+  "mphil_2026": {
+    "intro": "Congratulations to Yuke LI and Xinke LI on successfully defending their MPhil theses and graduating from HKUST(GZ). Their projects connect the group’s research on aquatic carbon cycling and contaminant transport.",
+    "students": [
+      {
+        "id": "yuke-li",
+        "name": "Yuke LI",
+        "image": "/images/updates/2026-10-26/yuke-defense.jpg",
+        "image_alt": "Yuke LI with her thesis examination committee after her MPhil defense",
+        "title": "Aquatic CO₂ and CH₄ emissions in the Greater Bay Area, China: the role of small water bodies",
+        "date": "2026-07-24",
+        "time": "09:00",
+        "venue": "E3-202, 2/F, HKUST(GZ)",
+        "committee": [
+          "Yi LIU",
+          "Zichong CHEN",
+          "Jinshu CHI",
+          "Liuqian YU"
+        ],
+        "paragraph": "Yuke LI successfully defended her MPhil thesis on 24 July 2026. Her research examines aquatic carbon dioxide and methane emissions from small water bodies in the Greater Bay Area, placing these often-overlooked systems within the region’s carbon cycle. We congratulate her on completing her MPhil at HKUST(GZ)."
+      },
+      {
+        "id": "xinke-li",
+        "name": "Xinke LI",
+        "image": "/images/updates/2026-10-26/xinke-defense.jpg",
+        "image_alt": "Xinke LI with her thesis examination committee after her MPhil defense",
+        "title": "Microplastic Transport Regulated by Land Use, Point Source and Tidal Forces in a Coastal River-Estuary System",
+        "date": "2026-07-25",
+        "time": "09:30",
+        "venue": "E1-201, 2/F, HKUST(GZ)",
+        "committee": [
+          "Yi LIU",
+          "Rongfeng YUAN",
+          "Jun WANG",
+          "Lanan CAI"
+        ],
+        "paragraph": "Xinke LI successfully defended her MPhil thesis on 25 July 2026. Her research investigates how land use, point sources and tidal forces regulate microplastic transport in a coastal river–estuary system. Following her MPhil graduation in September 2026, she continues with the group as a Research Assistant."
+      }
+    ]
+  }
+}

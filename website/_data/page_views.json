@@ -1,0 +1,18 @@
+{
+  "label": "Total views",
+  "provider": "goatcounter",
+  "enabled": true,
+  "site_code": "logscience-lab",
+  "counter_endpoint": "https://logscience-views.luohuanglin.workers.dev/views",
+  "refresh_seconds": 30,
+  "client_revision": "20261101-2",
+  "snapshot_path": "/metrics/page-views.json",
+  "website_views": 24,
+  "website_updated_at": "2026-11-01T14:27:43.601Z",
+  "repository_views": 15,
+  "repository_updated_on": "2026-11-01",
+  "allowed_hosts": [
+    "xiaoma2000.github.io"
+  ],
+  "description": "Combined views of the GitHub repository and this website. Includes 15 repository views recorded for 18–31 October 2026; new website views start after activation."
+}

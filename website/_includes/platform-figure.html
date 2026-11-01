@@ -1,0 +1,4 @@
+{% assign figure = include.item %}{% if figure.image %}<figure class="platform-figure">
+  <a class="platform-figure-link" href="{{ figure.image | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ figure.title | escape }} — view full-size figure">{% include lab-image.html src=figure.image alt=figure.image_alt %}<span class="figure-expand" aria-hidden="true">↗</span></a>
+  {% if figure.caption %}<figcaption>{{ figure.caption | escape }}</figcaption>{% endif %}
+</figure>{% endif %}

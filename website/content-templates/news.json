@@ -1,0 +1,11 @@
+{
+  "id": "replace-news-id",
+  "date": "YYYY-MM-DD",
+  "title": "替换为基于原文、以课题组视角撰写的标题",
+  "summary": "替换为经来源核对的摘要，不加入推测或夸大结论",
+  "url": "https://REPLACE-WITH-ORIGINAL-SOURCE",
+  "category": "research",
+  "image": "/images/news/REPLACE-WITH-PUBLIC-IMAGE.webp",
+  "image_alt": "替换为图片中实际内容的简洁描述",
+  "image_fit": "contain"
+}

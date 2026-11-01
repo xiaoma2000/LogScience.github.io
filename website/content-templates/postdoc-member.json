@@ -1,0 +1,18 @@
+{
+  "id": "replace-member-id",
+  "name": "替换为确认的英文姓名",
+  "entry": "2022-now",
+  "image": "/images/REPLACE-WITH-PUBLIC-PORTRAIT.webp",
+  "interests": [
+    "替换为成员确认的研究兴趣"
+  ],
+  "note": "替换为已确认的相关经历；无适用内容则删除本字段",
+  "education": "替换为确认的博士学位与年份范围，例如PhD, HKUST(GZ) · Fall 2022–2025",
+  "postdoc_supervisors": [
+    {
+      "name": "替换为用户确认的导师姓名；整个字段未知则删除 postdoc_supervisors",
+      "institution": "替换为用户确认的导师所属机构"
+    }
+  ],
+  "entry_type": "替换为确认的入组时间；博士后任职起点单独写入note"
+}

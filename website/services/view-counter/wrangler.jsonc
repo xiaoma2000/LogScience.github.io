@@ -1,0 +1,12 @@
+{
+  "name": "logscience-views",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "observability": {"enabled": true},
+  "vars": {
+    "GOATCOUNTER_SITE_CODE": "logscience-lab",
+    "GOATCOUNTER_START": "2026-11-01T00:00:00Z",
+    "ALLOWED_ORIGINS": "https://xiaoma2000.github.io"
+  }
+}

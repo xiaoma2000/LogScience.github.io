@@ -1,0 +1,18 @@
+{% assign views = site.data.page_views %}
+<span class="page-views" data-page-views hidden
+  data-enabled="{{ views.enabled }}"
+  data-site-code="{{ views.site_code | escape }}"
+  data-counter-endpoint="{{ views.counter_endpoint | escape }}"
+  data-snapshot-url="{{ views.snapshot_path | relative_url | escape }}"
+  data-website-views="{{ views.website_views }}"
+  data-website-updated-at="{{ views.website_updated_at | escape }}"
+  data-refresh-seconds="{{ views.refresh_seconds | default: 30 }}"
+  data-repository-views="{{ views.repository_views }}"
+  data-allowed-hosts="{{ views.allowed_hosts | jsonify | escape }}"
+  data-base-path="{{ site.baseurl | escape }}"
+  title="{{ views.description | escape }}"
+  aria-describedby="page-views-note">
+  <span>{{ views.label | escape }}:</span>
+  <strong data-page-views-value>{{ views.repository_views | plus: views.website_views }}</strong>
+  <span class="sr-only" id="page-views-note" data-page-views-note>{{ views.description | escape }}</span>
+</span>

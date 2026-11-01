@@ -1,0 +1,16 @@
+{
+  "id": "replace-opportunity-id",
+  "date": "YYYY-MM-DD",
+  "title": "替换为已确认的招生或招聘公告标题",
+  "summary": "替换为严格依据本次公告的摘要，不把历史岗位写为当前开放",
+  "url": "https://REPLACE-WITH-ORIGINAL-ANNOUNCEMENT",
+  "category": "opportunities",
+  "image": "/images/opportunities/REPLACE-WITH-PUBLIC-IMAGE.webp",
+  "image_alt": "替换为图片实际内容",
+  "positions": "替换为原文确认的岗位和名额",
+  "intake": "替换为原文确认的入学或到岗时间",
+  "research_focus": "替换为本次公告确认的研究方向",
+  "requirements": [
+    "替换为本次公告确认的申请要求"
+  ]
+}

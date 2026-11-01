@@ -1,0 +1,20 @@
+# Generated website output, temporary builds and local configuration
+/website/_site/
+/website/local/
+/website/.sass-cache/
+/website/.jekyll-cache/
+/website/.jekyll-metadata
+
+# Locally generated dependencies; sources stay in website/
+/website/Gemfile.lock
+/website/node_modules/
+/website/package-lock.json
+/website/services/**/.dev.vars*
+/website/services/**/.env*
+/website/services/**/.wrangler/
+
+# Python caches at any depth
+__pycache__/
+# CI-generated recovery data is published by Jekyll, never committed as source.
+/website/metrics/repository-traffic.json
+/website/metrics/page-views.json

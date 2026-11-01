@@ -1,0 +1,116 @@
+name: Publish LogScience website
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+    permissions:
+      contents: read
+      pages: read
+      actions: read
+    steps:
+      - name: Check out approved sources
+        uses: actions/checkout@v4
+      - name: Read Pages deployment metadata
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Find the last repository traffic ledger
+        if: github.repository == 'xiaoma2000/LogScience.github.io'
+        id: traffic
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 tools/repository_traffic.py find-artifact >> "$GITHUB_OUTPUT"
+      - name: Restore repository traffic observations
+        if: steps.traffic.outputs.artifact_id != ''
+        id: restore
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ steps.traffic.outputs.artifact_id }}
+          run-id: ${{ steps.traffic.outputs.run_id }}
+          github-token: ${{ github.token }}
+          path: website/local/traffic-state
+          merge-multiple: true
+      - name: Collect and merge repository views by UTC day
+        if: github.repository == 'xiaoma2000/LogScience.github.io'
+        env:
+          TRAFFIC_READ_TOKEN: ${{ secrets.TRAFFIC_READ_TOKEN }}
+          TRAFFIC_RESTORE_OUTCOME: ${{ steps.restore.outcome }}
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: python3 tools/repository_traffic.py collect
+      - name: Save confirmed website views for all visitor networks
+        if: github.repository == 'xiaoma2000/LogScience.github.io'
+        env:
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: python3 tools/website_views.py
+      - name: Preserve cumulative repository and website views
+        if: github.repository == 'xiaoma2000/LogScience.github.io'
+        uses: actions/upload-artifact@v4
+        with:
+          name: logscience-repository-traffic-ledger
+          path: |
+            website/local/traffic-state/ledger.json
+            website/local/traffic-state/page-views.json
+          if-no-files-found: error
+          retention-days: 90
+      - name: Check source content and behavior
+        run: |
+          python3 -m unittest discover -s tests -q
+          node --test tests/*.cjs
+          python3 tools/check_content.py
+      - name: Configure this build for its Pages address
+        env:
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          PAGES_REPOSITORY: ${{ github.repository }}
+        run: python3 tools/prepare_pages_config.py
+      - name: Stage traffic recovery data for the Jekyll build
+        if: github.repository == 'xiaoma2000/LogScience.github.io'
+        run: |
+          mkdir -p metrics
+          cp local/traffic-state/ledger.json metrics/repository-traffic.json
+      - name: Build with the official Pages Jekyll environment
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./website
+          destination: ./website/_site
+          verbose: false
+      - name: Check built pages, links and assets
+        run: python3 tools/check_content.py --site-dir _site --json
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./website/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy approved website
+        id: deployment
+        uses: actions/deploy-pages@v5

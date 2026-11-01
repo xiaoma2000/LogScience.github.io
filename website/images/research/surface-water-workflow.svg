@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+  <title id="title">Satellite observations of surface-water dynamics</title>
+  <desc id="desc">A conceptual workflow connecting Landsat and Sentinel-2 observations, deep-learning water fraction reconstruction, and the characterization of water persistence, seasonality and transitions.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#668895" stroke-width="1.5"/></marker>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#fff" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="960" height="680" fill="#f7fafb"/>
+  <g font-family="Arial, sans-serif" fill="#243e4a">
+    <text x="48" y="58" font-size="27" font-weight="700">Observing water through time</text>
+    <text x="48" y="90" font-size="17" fill="#59717c">Conceptual workflow · Ongoing research</text>
+    <g transform="translate(48 125)">
+      <rect width="405" height="172" rx="9" fill="#fff" stroke="#d3e1e7"/>
+      <text x="22" y="37" font-size="20" font-weight="700">Satellite observations</text>
+      <text x="22" y="66" font-size="16" fill="#59717c">Harmonized Landsat–Sentinel-2</text>
+      <rect x="24" y="88" width="90" height="61" rx="3" fill="#d4dfc5"/><path d="M24 125Q65 97 114 112V149H24Z" fill="#58a8bd"/>
+      <rect x="135" y="88" width="90" height="61" rx="3" fill="#d4dfc5"/><path d="M135 116Q180 94 225 106V149H135Z" fill="#3d92ad"/>
+      <rect x="246" y="88" width="90" height="61" rx="3" fill="#d4dfc5"/><path d="M246 135Q291 112 336 128V149H246Z" fill="#64b7c6"/>
+    </g>
+    <g transform="translate(505 125)">
+      <rect width="405" height="172" rx="9" fill="#fff" stroke="#d3e1e7"/>
+      <text x="22" y="37" font-size="20" font-weight="700">Continuous water fraction</text>
+      <text x="22" y="66" font-size="16" fill="#59717c">Deep learning · Monthly 30 m grids</text>
+      <rect x="24" y="86" width="180" height="64" fill="#dcebf0"/>
+      <path d="M24 135L54 118L84 95L114 107L144 86L174 104L204 93V150H24Z" fill="#338eac"/>
+      <rect x="24" y="86" width="180" height="64" fill="url(#grid)"/>
+      <text x="229" y="111" font-size="16" fill="#59717c">Water–land</text>
+      <text x="229" y="137" font-size="16" fill="#59717c">mixed pixels</text>
+    </g>
+    <path d="M463 211H495" fill="none" stroke="#668895" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M708 310V343H480V375" fill="none" stroke="#668895" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(48 389)">
+      <rect width="862" height="222" rx="9" fill="#fff" stroke="#d3e1e7"/>
+      <text x="24" y="39" font-size="20" font-weight="700">Surface-water dynamics</text>
+      <text x="24" y="68" font-size="16" fill="#59717c">Link time-series behavior with rivers, reservoirs and small water bodies</text>
+      <g transform="translate(24 95)"><rect width="250" height="98" rx="6" fill="#e9f3f7"/><text x="18" y="35" font-size="19" font-weight="700">Persistence</text><text x="18" y="66" font-size="15" fill="#59717c">How long is water present?</text></g>
+      <g transform="translate(303 95)"><rect width="250" height="98" rx="6" fill="#edf4ec"/><text x="18" y="35" font-size="19" font-weight="700">Seasonality</text><text x="18" y="66" font-size="15" fill="#59717c">When does coverage change?</text></g>
+      <g transform="translate(582 95)"><rect width="250" height="98" rx="6" fill="#f6f0e7"/><text x="18" y="35" font-size="19" font-weight="700">Transitions</text><text x="18" y="66" font-size="15" fill="#59717c">How often does it change?</text></g>
+    </g>
+    <text x="48" y="650" font-size="14" fill="#59717c">Conceptual illustration of research aims and methods.</text>
+  </g>
+</svg>
